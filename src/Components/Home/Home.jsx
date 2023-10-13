@@ -6,6 +6,10 @@ import img3 from '../../images/home-3.jpg'
 import arhi1 from '../../images/archi-8-700x640.jpg'
 import arhi2 from '../../images/archi-4-700x640.jpg'
 import arhi3 from '../../images/archi-17.png'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import ow from 'react-owl-carousel'
 
 
 import { Link } from 'react-router-dom';
@@ -25,28 +29,17 @@ export default function Home() {
           <img src={img1} class="d-block home-bg w-100" alt="home3" />
         </div>
       </div>
-      <button class="carousel-control-prev carousel-width" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-        <div className='control d-flex rounded-circle justify-content-center align-items-center'>
-          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </div>
-      </button>
-      <button class="carousel-control-next carousel-width" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-        <div className='control d-flex rounded-circle  justify-content-center align-items-center'>
-          <span class="carousel-control-next-icon " aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </div>
-      </button>
+
     </div>
     {/* body*/}
-    <div className="home-main  container d-flex flex-column text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0 mb-5">
+    <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0 mb-5">
       <p className='p1'>Architect house</p>
       <h1>Creativity & Contemporary</h1>
       <p className='p2'>Whatever good things we build end up building us.</p>
       <div >
-        <button className='btn btn-outline-light p-3 px-4 mx-2'>Learn More</button>
+        <button className='btn my-2 btn-outline-light p-3 px-4 mx-2'>Learn More</button>
         <Link to={'about'}>
-          <button className='btn btn-light p-3 px-4'>About us</button>
+          <button className='btn my-2 btn-light p-3 px-4'>About us</button>
         </Link>
       </div>
     </div>
@@ -59,12 +52,12 @@ export default function Home() {
 
     </div>
     {/*third-section*/}
-    <div className='third-section  my-5   '>
+    <div className='third-section py-4 my-5   '>
       <div className="container">
         <div className="row ">
-          <div className="col-md-6 px-5">
+          <div className="col-md-6 text-center d-flex align-items-center  ">
             <div>
-              <img src={arhi1} className='w-100' alt="arhi1" />
+              <img src={arhi1} className='imgs-width' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4">
@@ -73,15 +66,15 @@ export default function Home() {
               </h2>
               <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>  Aliquam fermentum lorem quis posuere mattis.</span>
                 </li>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>
@@ -96,24 +89,24 @@ export default function Home() {
 
     </div>
     {/*forth-section*/}
-    <div className='third-section  my-5   '>
+    <div className='third-section py-4  my-5   '>
       <div className="container ">
-        <div className="row ">
-          <div className="col-md-6 px-5 py-4">
+        <div className="row">
+          <div className="col-md-6 pb-4 ">
             <div>
               <h2 className='home-title pb-3'>Architecture is a visual art.
               </h2>
               <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>  Aliquam fermentum lorem quis posuere mattis.</span>
                 </li>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
-                <li>
+                <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>
@@ -122,9 +115,9 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="col-md-6 px-5">
+          <div className="col-md-6 text-center d-flex  align-items-center ">
             <div>
-              <img src={arhi2} className='w-100' alt="arhi2" />
+              <img src={arhi2} className='imgs-width' alt="arhi2" />
             </div>
           </div>
 
@@ -136,30 +129,30 @@ export default function Home() {
     <div className='home-counter py-5  py-3'>
       <div className="container ">
         <div className="row justify-content-center align-items-center">
-          <div className="col-lg-3 col-md-6 ">
+          <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class="mb-2 fa-regular fa-2xl fa-thumbs-up"></i>
+              <i class=" fa-regular fa-2xl fa-thumbs-up"></i>
               <p className='counter-num my-3'>1400</p>
               <p className='counter-title'>Page Likes</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 ">
+          <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class="mb-2 fa-solid fa-lg fa-shop"></i>
+              <i class=" fa-solid fa-lg fa-shop"></i>
               <p className='counter-num my-3'>64</p>
               <p className='counter-title'>Locations</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 ">
+          <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class="mb-2 fa-regular fa-lg fa-lightbulb"></i>
+              <i class=" fa-regular fa-lg fa-lightbulb"></i>
               <p className='counter-num my-3'>960</p>
               <p className='counter-title'>Great Ideas</p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 ">
+          <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class="mb-2 fa-regular fa-lg fa-comment"></i>
+              <i class=" fa-regular fa-lg fa-comment"></i>
               <p className='counter-num my-3'>420</p>
               <p className='counter-title'>Comments</p>
             </div>
@@ -167,18 +160,17 @@ export default function Home() {
         </div>
       </div>
     </div>
-
     {/* fifth section */}
-    <div className='fifth-section  my-5   '>
+    <div className='fifth-section my-5   '>
       <div className="container ">
         <div className="row ">
-          <div className="col-md-6 d-flex flex-column justify-content-center">
-            <div className='px-5'>
+          <div className="col-md-6 my-4 d-flex flex-column justify-content-center">
+            <div >
               <h3>Buildings should serve people, not the other way around.</h3>
               <p className='main-text-color'>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo leo velit sit amet velit. Aliquam fermentum, lorem quis posuere mattis, est justo porttitor magna.</p>
             </div>
           </div>
-          <div className="col-md-6 ">
+          <div className="col-md-6 my-4 d-flex align-items-center ">
             <div>
               <img src={arhi3} className='w-100' alt="arhi2" />
             </div>
@@ -224,11 +216,101 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
+    {/* Testimonials */}
+    <div className='my-5 testimonials'>
+      <div className='w-100 h-100 py-5 text-center layer  text-white'>
+
+        <h3 className='mt-4'>Testimonials</h3>
+        <p className='my-4'>What our awesome clients say about us.</p>
+
+        <div className='mt-4 container w-100 d-flex justify-content-center align-items-center'>
+
+          <OwlCarousel className='owl-theme  my-5' loop dots items={2} responsive={{ 0: { items: 1 }, 979: { items: 2 } }}>
+            <div class='item text-start mx-2'>
+              <div className='testimonials-item rounded-2 my-4'>
+                <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
+              </div>
+              <p className='client m-0  '>Michael Moore</p>
+              <p className='company m-0'>Apple</p>
+            </div>
+            <div class='item text-start mx-2'>
+              <div className='testimonials-item rounded-2 my-4'>
+                <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
+              </div>
+              <p className='client m-0  '>Michael Moore</p>
+              <p className='company m-0'>FaceBook</p>
+            </div>
+            <div class='item text-start mx-2'>
+              <div className='testimonials-item rounded-2 my-4'>
+                <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
+              </div>
+              <p className='client m-0  '>Michael Moore</p>
+              <p className='company m-0'>Google</p>
+            </div>
+
+          </OwlCarousel>
+
+        </div>
+
+      </div >
+    </div >
+    {/* location */}
+    <div className='third-section my-5 py-2  '>
+      <div className="container ">
+        <div className="row ">
+          <div className="col-md-6 py-4">
+            <div>
+              <h3 className='home-title contact-title pb-3'>Contact Information
+              </h3>
+              <p className='main-text-color'>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <p className='main-text-color my-4'>Our contact details:</p>
+              <ul className='list-unstyled my-3 text-start'>
+                <li className='d-flex mx-0  my-3 align-items-baseline' >
+
+                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-map main-text-color '></i>
+                  </div>
+                  <span className='main-text-color'>  Manchester St 123-78B, Random 713, UK</span>
+                </li>
+
+                <li className='d-flex mx-0  my-3 align-items-baseline' >
+
+                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-phone main-text-color '></i>
+                  </div>
+                  <span className='main-text-color'> +46 123 456 789</span>
+                </li>
+                <li className='d-flex mx-0  my-3 align-items-baseline' >
+
+                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-headphones main-text-color '></i>
+                  </div>
+                  <span className='main-text-color'>  +37 431 456 789</span>
+                </li>
+                <li className='d-flex mx-0  my-3 align-items-baseline' >
+
+                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-envelope main-text-color '></i>
+                  </div>
+                  <span className='main-text-color'>hello@sitename.com</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div className="col-md-6 text-center map ">
+            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988756678!2d0.0632084811207095!3d51.52873980478871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z2YTZhtiv2YbYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1697235415908!5m2!1sar!2seg" className='w-100 h-100 ' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
+  </div >
 
-
-  </div>
 
 }

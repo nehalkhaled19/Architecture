@@ -6,9 +6,9 @@ export default function Footer() {
         <footer>
             {/* first section */}
             <div className='footer1'>
-            <div className="container py-5 ">
-                <div className="row">
-                    <div className="col-md-4">
+            <div className="container py-4 ">
+                <div className="row pt-4">
+                    <div className="col-lg-4 py-2 col-md-6">
                         <div>
                             <h4 className='mb-3'>About us</h4>
                             <p className='footer-text' >I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
@@ -19,7 +19,7 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-lg-4 py-2 col-md-6">
                         <div>
                             <h4 className='mb-3'>Opening Hours</h4>
                             <ul className='list-unstyled'>
@@ -52,7 +52,7 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div className="col-md-4 footer-contact">
+                    <div className="col-lg-4 py-2 col-md-6 footer-contact">
                         <div className='footer-layer'>
                             <h4 className='mb-3 '>Contact Details </h4>
                             <ul className='list-unstyled'>
@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
             </div>
             {/* second section */}
-            <div className=' footer2 py-4'>
+            <div className=' footer2 py-3'>
                 <div className="conatiner text-center">
                     <p className='m-auto my-2' >Copyright 2017 All rights reserved.</p>
                     <div className='d-flex my-3 justify-content-center '>
