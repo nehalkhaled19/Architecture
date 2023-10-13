@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Architecture/static/css/main.05d0d25c.css",
+    "main.js": "/Architecture/static/js/main.66e51a4b.js",
+    "static/js/787.3668de33.chunk.js": "/Architecture/static/js/787.3668de33.chunk.js",
+    "static/media/home-1.jpg": "/Architecture/static/media/home-1.95a0f56123ee519eea00.jpg",
+    "static/media/home-3.jpg": "/Architecture/static/media/home-3.f8de7d3f988eb081fc5e.jpg",
+    "static/media/fa-solid-900.ttf": "/Architecture/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/home-2.jpg": "/Architecture/static/media/home-2.7ffd26320a648da69cfa.jpg",
+    "static/media/archi16.jpg": "/Architecture/static/media/archi16.2e232f0ee27fb549f256.jpg",
+    "static/media/fa-brands-400.ttf": "/Architecture/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/Architecture/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/Architecture/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/archi-17.png": "/Architecture/static/media/archi-17.1d9cf53e2c154e276604.png",
+    "static/media/fa-regular-400.ttf": "/Architecture/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/Architecture/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/archi-8-700x640.jpg": "/Architecture/static/media/archi-8-700x640.81a91a7f8c096f309d3e.jpg",
+    "static/media/archi-4-700x640.jpg": "/Architecture/static/media/archi-4-700x640.4e2f727467b0105a5e2d.jpg",
+    "static/media/fa-v4compatibility.ttf": "/Architecture/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Architecture/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/Architecture/index.html",
+    "main.05d0d25c.css.map": "/Architecture/static/css/main.05d0d25c.css.map",
+    "main.66e51a4b.js.map": "/Architecture/static/js/main.66e51a4b.js.map",
+    "787.3668de33.chunk.js.map": "/Architecture/static/js/787.3668de33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05d0d25c.css",
+    "static/js/main.66e51a4b.js"
+  ]
+}
