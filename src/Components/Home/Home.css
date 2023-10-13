@@ -1,0 +1,101 @@
+/* home */
+.home-bg {
+    background: center top;
+    background: transparent;
+    height: 100vh;
+}
+
+.carousel-width {
+    width: 6%;
+}
+
+.home-main {
+    z-index: 666;
+}
+
+.home-main .p1 {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 5px;
+}
+
+.home-main .p2 {
+    font-size: 24px;
+    line-height: 44px;
+    margin: 10px 0 20px;
+}
+
+.home-main h1 {
+    font-size: 75px;
+    line-height: 86px;
+    margin-bottom: 18px;
+}
+
+.control {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.home-main .btn {
+    font-weight: 700 !important;
+}
+
+.main-text-color {
+    color: #606060;
+}
+
+/* second-section */
+.home-title {
+    font-size: 32px;
+    line-height: 44px;
+    color: #303030;
+}
+
+.second-section p {
+    padding: 20px 0px;
+    max-width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+/* home-counter */
+.home-counter {
+    background-image: url(../../images/archi16.jpg);
+    position: sticky;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.home-counter i {
+    font-size: 40px;
+}
+
+.counter-num {
+    font-size: 52px;
+}
+
+.counter-title {
+    font-size: 20px;
+}
+
+/* fifth-section */
+.fifth-section h3 {
+    font-size: 24px;
+    color: #303030;
+    line-height: 33.12px;
+    font-weight: 400;
+}
+
+.fifth-section p {
+    font-size: 18px;
+    line-height: 33.12px;
+}
