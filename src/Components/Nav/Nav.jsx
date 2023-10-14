@@ -3,8 +3,9 @@ import logo from '../../images/logo-light.png'
 import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
+  //bg-transparent 
   return <>
-    <nav className="fixed-top  navbar navbar-expand-lg  bg-transparent">
+    <nav className="fixed-top  navbar navbar-expand-lg   bg-black">
       <div className="container  px-5">
         <div className=" py-3 d-flex w-100 m-auto">
           <NavLink className='navbar-brand' to={''}>

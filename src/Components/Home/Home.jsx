@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return <div>
     {/* carousel */}
-    <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleRide" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
       <div class="carousel-inner ">
         <div class="carousel-item active">
           <img src={img3} class="d-block home-bg w-100" alt="home1" />
@@ -29,10 +29,8 @@ export default function Home() {
           <img src={img1} class="d-block home-bg w-100" alt="home3" />
         </div>
       </div>
-
-    </div>
-    {/* body*/}
-    <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0 mb-5">
+ {/* body*/}
+ <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0">
       <p className='p1'>Architect house</p>
       <h1>Creativity & Contemporary</h1>
       <p className='p2'>Whatever good things we build end up building us.</p>
@@ -43,6 +41,8 @@ export default function Home() {
         </Link>
       </div>
     </div>
+    </div>
+   
     {/*second-section*/}
     <div className='second-section py-4 my-5 text-center d-flex '>
       <div className="container">
@@ -268,10 +268,10 @@ export default function Home() {
               <ul className='list-unstyled my-3 text-start'>
                 <li className='d-flex mx-0  my-3 align-items-baseline' >
 
-                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
-                    <i className='fa-solid fa-map main-text-color '></i>
+                  <div className='icon-holder me-3 bg-white border nn border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-map main-text-color  '></i>
                   </div>
-                  <span className='main-text-color'>  Manchester St 123-78B, Random 713, UK</span>
+                  <span className='main-text-color'>  Manchester St 123-78B, UK</span>
                 </li>
 
                 <li className='d-flex mx-0  my-3 align-items-baseline' >

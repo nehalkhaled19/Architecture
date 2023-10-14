@@ -52,8 +52,8 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div className="col-lg-4 py-2 col-md-6 footer-contact">
-                        <div className='footer-layer'>
+                    <div className="col-lg-4 px-0 col-md-6 footer-contact">
+                        <div className='footer-layer p-2'>
                             <h4 className='mb-3 '>Contact Details </h4>
                             <ul className='list-unstyled'>
                                 <li className=' py-3 footer-border '>
@@ -84,7 +84,7 @@ export default function Footer() {
             {/* second section */}
             <div className=' footer2 py-3'>
                 <div className="conatiner text-center">
-                    <p className='m-auto my-2' >Copyright 2017 All rights reserved.</p>
+                    <p className='m-auto p-2' >Copyright 2017 All rights reserved.</p>
                     <div className='d-flex my-3 justify-content-center '>
                         <div className='icon-holder icon-facebook mx-1 d-flex justify-content-center align-items-center '>
                             <i className='fa-brands fa-facebook-f '></i>

@@ -4,9 +4,15 @@
 }
 /*  Navbar */
 .nav-link{
-    color: white;
+    color: white !important;
     font-size: 17px;
 }
 .nav-link:hover{
     color: white !important;
+}
+.nav-link:focus .nav-link.active {
+    color: white !important;
+}
+.imgs-width {
+    width: 80%;
 }
