@@ -26,15 +26,15 @@ export default function About() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 px-3 ">
-              <div className='position-relative h-100 d-flex align-items-center '>
+              <div className='text-end '>
                 <img src={img1} className='about-img rounded-2' alt="arch12" />
 
               </div>
             </div>
             <div className="col-md-6 py-3 px-5 d-flex flex-column justify-content-center edit">
               <div >
-                <h2>Our Story</h2>
-                <p className='max-width'>Sed faucibus arcu. Donec semper risus arcu, nec tempor nisl vestibulum nec. Suspendisse tempor posuere sodales. Mauris molestie vestibulum sem id posuere. Aliquam interdum lacinia ante quis pharetra. Curabitur molestie ultrices consequat. Vivamus finibus ex vel fermentum ultricies. Mauris interdum eros sit amet eros commodo euismod. We have been operating for over 30 years and are Members of The Federation of Master Builders.</p>
+                <h2 className='main-font-weight main-h2 my-4'>Our Story</h2>
+                <p className='max-width main-p'>Sed faucibus arcu. Donec semper risus arcu, nec tempor nisl vestibulum nec. Suspendisse tempor posuere sodales. Mauris molestie vestibulum sem id posuere. Aliquam interdum lacinia ante quis pharetra. Curabitur molestie ultrices consequat. Vivamus finibus ex vel fermentum ultricies. Mauris interdum eros sit amet eros commodo euismod. We have been operating for over 30 years and are Members of The Federation of Master Builders.</p>
               </div>
             </div>
 
@@ -42,17 +42,17 @@ export default function About() {
         </div>
       </div>
       {/* section 2 goal*/}
-      <div className='our-goal  py-5'>
+      <div className='main-bg-color  py-5'>
         <div className="container">
           <div className="row our-story">
             <div className="col-md-6 py-3 px-5 d-flex flex-column justify-content-center edit">
               <div >
-                <h2>Our Goal</h2>
-                <p className='max-width'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
+                <h2 className='main-font-weight main-h2 my-4'>Our Goal</h2>
+                <p className='max-width main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
               </div>
             </div>
             <div className="col-md-6 py-3 px-3 ">
-              <div className='position-relative h-100 d-flex align-items-center '>
+              <div className='text-start'>
                 <img src={img2} className=' about-img rounded-2' alt="arch15" />
               </div>
             </div>
@@ -115,10 +115,10 @@ export default function About() {
 
       </div>
       {/* section 4 team*/}
-      <div className='our-goal our-methood  py-5'>
+      <div className='main-bg-color our-methood  py-5'>
         <div className='w-100 text-center py-3 '>
           <i class="fa-solid fa-user fa-2xl" style={{ color: '#d8b478' }}></i>
-          <h3 className='my-4'>Our Dedicated Team</h3>
+          <h3 className='main-font-weight my-4'>Our Dedicated Team</h3>
           <p className='text-muted'>Learn more about our architecture experts.</p>
         </div>
         <div className="container p-4 team">

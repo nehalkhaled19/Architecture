@@ -1,7 +1,4 @@
 /* About */
-.about{
-    font-family: 'Open Sans', sans-serif;
-}
 .about-img{
     width: 90%;
 }
@@ -19,23 +16,7 @@
     color: #262626;
 }
 
-/* our story */
-.our-story h2 {
-    color: #303030;
-    font-size: 32px;
-    line-height: 44px;
-    margin: 10px 0;
-}
 
-.our-story p {
-    color: #686868;
-    font-size: 15px;
-    line-height: 27px;
-}
-/* our goal */
-.our-goal{
-    background-color: #f8f8f8;;
-}
 /* our methood */
 .our-methood h3{
     color: #303030;

@@ -60,11 +60,11 @@ export default function Home() {
               <img src={arhi1} className='imgs-width' alt="arhi1" />
             </div>
           </div>
-          <div className="col-md-6 pt-4">
+          <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
             <div>
-              <h2 className='home-title pb-3'>Less is more.
+              <h2 className='home-title main-h2 pb-3'>Less is more.
               </h2>
-              <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+              <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
                 <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
@@ -74,7 +74,7 @@ export default function Home() {
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
-                <li className='my-2'>
+                <li className='mt-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>
@@ -92,11 +92,11 @@ export default function Home() {
     <div className='third-section py-4  my-5   '>
       <div className="container ">
         <div className="row">
-          <div className="col-md-6 pb-4 ">
+          <div className="col-md-6 pb-4 d-flex flex-column justify-content-center">
             <div>
-              <h2 className='home-title pb-3'>Architecture is a visual art.
+              <h2 className='home-title main-h2 pb-3'>Architecture is a visual art.
               </h2>
-              <p>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+              <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
                 <li className='my-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
@@ -106,7 +106,7 @@ export default function Home() {
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
-                <li className='my-2'>
+                <li className='mt-2'>
                   <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>

@@ -2,12 +2,7 @@
 :root {
     --text-color: #797979;
     --text-width: 380px
-  }
-  
-  .cursor-pointer {
-    cursor: pointer;
-  }
-  
+  }  
   /* start footer section */
   
   footer {

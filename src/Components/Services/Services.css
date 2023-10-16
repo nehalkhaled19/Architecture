@@ -1,0 +1,13 @@
+/* Services */
+.unique h2 {
+    font-size: 24px;
+    color: #303030;
+    font-weight: 400 !important;
+}
+.line{
+    height: 1px;
+    width: 40%;
+    background: #e3e3e3;
+    margin-bottom: 15px;
+
+}

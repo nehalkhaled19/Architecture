@@ -1,18 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-.body{
-    font-family: 'Open Sans', sans-serif;
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
 }
+
 /*  Navbar */
-.nav-link{
+.nav-link {
     color: white !important;
     font-size: 17px;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: white !important;
 }
+
 .nav-link:focus .nav-link.active {
     color: white !important;
 }
+
+.max-width {
+    max-width: 550px;
+}
+
 .imgs-width {
     width: 80%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.main-font-weight {
+    font-weight: 400;
+}
+
+.main-p {
+    color: #606060;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.main-h2 {
+    font-size: 30px;
+    color: #303030;
+    font-weight: 400;
+}
+.main-bg-color{
+    background-color: #f8f8f8;
 }
