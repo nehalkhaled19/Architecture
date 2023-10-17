@@ -59,9 +59,6 @@
   .icon-holder2:hover{
     color: white !important;
   }
-  .over-flow{
-    overflow: hidden;
-  }
   .zoom img{
     transition: all 0.4s ease 0s;
   }

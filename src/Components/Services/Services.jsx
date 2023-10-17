@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../../images/archi-14-700x600.jpg'
 import img2 from '../../images/archi-11-700x600.jpg'
 import img3 from '../../images/archi-7-700x600.jpg'
 import img4 from '../../images/archi-15-800x600.jpg'
+import $ from 'jquery'
 import '../About/About.css'
 import './Services.css'
 
 export default function Services() {
+
+
+  // video
+  useEffect(() => {
+    document.querySelector("#videoIcon").addEventListener("click", () => {
+      $('#videoImg').addClass("d-none");
+      $('#videoIcon').addClass("d-none");
+      $('#videoo').removeClass("d-none").attr('src','https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1')
+    })
+  }, [])
+
+
+
+
   return (
     <div className='services'>
       {/* title */}
@@ -40,8 +55,8 @@ export default function Services() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
-              <div>
-                <img src={img1} className='about-img rounded-2' alt="arch1" />
+              <div className='over-flow rounded-2'>
+                <img src={img1} className='about-img rounded-2 img-transform' alt="arch1" />
 
               </div>
             </div>
@@ -71,9 +86,9 @@ export default function Services() {
                   I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
               </div>
             </div>
-            <div className="col-md-6 py-3 ">
-              <div>
-                <img src={img2} className='about-img rounded-2' alt="arch2" />
+            <div className="col-md-6 py-3">
+              <div className='over-flow rounded-2'>
+                <img src={img2} className='about-img rounded-2 img-transform' alt="arch2" />
 
               </div>
             </div>
@@ -86,8 +101,8 @@ export default function Services() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
-              <div>
-                <img src={img3} className='about-img rounded-2' alt="arch1" />
+              <div className='over-flow rounded-2'>
+                <img src={img3} className='about-img rounded-2 img-transform' alt="arch1" />
 
               </div>
             </div>
@@ -153,11 +168,29 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center  py-5">
-            {/* <video controls poster={img4}>
-              <source src="https://www.youtube.com/embed/rEmYmu6jxz0?si=H32Gicxbf-NN1bFI" type="video/mp4" />
-            </video> */}
-            {/* <iframe width="400px" poster={img4} height="315px" src="https://www.youtube.com/embed/rEmYmu6jxz0?si=H32Gicxbf-NN1bFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+          <div className="d-flex justify-content-center  py-5">
+
+            <div className='video rounded-3' >
+              <div className="d-flex position-absolute top-0 end-0 start-0  bottom-0 align-items-center justify-content-center">
+                <i id='videoIcon' class="fa-regular fa-circle-play cursor-pointer" ></i>
+              </div>
+              <img id='videoImg' className='w-100 h-100 rounded-3' src={img4} alt="arch4" />
+
+              <iframe id='videoo' className='w-100 h-100 rounded-3 position-absolute top-0 d-none'src="https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+
+
+              {/* modal */}
+
+              <dialog>
+            
+              </dialog>
+              {/* <div class="modal fade bg-info" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog w-100 bg-info modal-dialog-centered">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              </div> */}
+            </div>
           </div>
         </div>
       </div>
