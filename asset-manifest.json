@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Architecture/static/css/main.fda093c8.css",
-    "main.js": "/Architecture/static/js/main.ee787e4e.js",
+    "main.css": "/Architecture/static/css/main.b63a1357.css",
+    "main.js": "/Architecture/static/js/main.6a77b77b.js",
     "static/js/787.3668de33.chunk.js": "/Architecture/static/js/787.3668de33.chunk.js",
     "static/media/home-1.jpg": "/Architecture/static/media/home-1.95a0f56123ee519eea00.jpg",
     "static/media/home-3.jpg": "/Architecture/static/media/home-3.f8de7d3f988eb081fc5e.jpg",
@@ -13,9 +13,12 @@
     "static/media/fa-solid-900.woff2": "/Architecture/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
     "static/media/fa-brands-400.woff2": "/Architecture/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
     "static/media/archi-17.png": "/Architecture/static/media/archi-17.1d9cf53e2c154e276604.png",
+    "static/media/archi-7-700x600.jpg": "/Architecture/static/media/archi-7-700x600.0405d0c6fe7fb114156f.jpg",
     "static/media/archi-18-800x600.jpg": "/Architecture/static/media/archi-18-800x600.1af7f970ea9b0b171d3b.jpg",
+    "static/media/archi-11-700x600.jpg": "/Architecture/static/media/archi-11-700x600.741ba6b7304c921e36f2.jpg",
     "static/media/fa-regular-400.ttf": "/Architecture/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
     "static/media/archi-15-800x600.jpg": "/Architecture/static/media/archi-15-800x600.341e04382477e5300a46.jpg",
+    "static/media/archi-14-700x600.jpg": "/Architecture/static/media/archi-14-700x600.7b0a6dd649c59ae99fa0.jpg",
     "static/media/person3-600x600.jpg": "/Architecture/static/media/person3-600x600.79a40bed5b705430592e.jpg",
     "static/media/person1-600x600.jpg": "/Architecture/static/media/person1-600x600.1d870e8dd677ff34957c.jpg",
     "static/media/person2-600x600.jpg": "/Architecture/static/media/person2-600x600.06fb5ad09cadc3771749.jpg",
@@ -25,12 +28,12 @@
     "static/media/fa-v4compatibility.ttf": "/Architecture/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/Architecture/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/Architecture/index.html",
-    "main.fda093c8.css.map": "/Architecture/static/css/main.fda093c8.css.map",
-    "main.ee787e4e.js.map": "/Architecture/static/js/main.ee787e4e.js.map",
+    "main.b63a1357.css.map": "/Architecture/static/css/main.b63a1357.css.map",
+    "main.6a77b77b.js.map": "/Architecture/static/js/main.6a77b77b.js.map",
     "787.3668de33.chunk.js.map": "/Architecture/static/js/787.3668de33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda093c8.css",
-    "static/js/main.ee787e4e.js"
+    "static/css/main.b63a1357.css",
+    "static/js/main.6a77b77b.js"
   ]
 }
