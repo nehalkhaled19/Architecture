@@ -1,0 +1,85 @@
+/* tabs & navs */
+.works-tabs .nav-link {
+    color: #949494 !important;
+    font-size: 16;
+    padding: 0 10px;
+
+}
+
+.works-tabs .nav-link:hover {
+    color: #2d2c2c !important;
+}
+
+.works-tabs .active {
+    background-color: transparent !important;
+    border-radius: 0;
+    color: #2d2c2c !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.work {
+    overflow: hidden;
+}
+
+.work:hover .portfolio-layer {
+    top: 0;
+}
+
+.portfolio-layer {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 55;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.portfolio-layer h4 {
+    color: white;
+    position: relative;
+    opacity: 0;
+    top: -50%;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.p-icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.p-icon:hover {
+    background-color: #333;
+    color: rgba(255, 255, 255);
+    ;
+}
+
+.portfolio-icons {
+    position: relative;
+    bottom: -50%;
+    transition: all 0.5s;
+}
+
+.portfolio-layer:hover h4 {
+    top: 0px;
+    opacity: 1;
+
+}
+
+.portfolio-layer:hover .portfolio-icons {
+    bottom: 0px;
+}
+
+.i-close {
+    color: rgba(255, 255, 255, 0.418);
+
+}
+.i-close:hover {
+    color: rgba(255, 255, 255);
+
+}

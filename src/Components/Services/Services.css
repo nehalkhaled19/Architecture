@@ -26,11 +26,57 @@
     z-index: 555;
     color: rgba(255, 255, 255, 0.647);
 }
+
 .video i:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-#videoImg{
+#videoImg {
     object-fit: cover;
 
+}
+
+.main-h1 {
+    font-size: 38px !important;
+    margin: 0 45px;
+    line-height: 55px;
+}
+.hire-us{
+    background-image: url(../../images/archi16.jpg);
+    background-position: center; 
+    height: 60%;
+    position: relative;
+}
+.hire-us span{
+    font-size: 36px;
+}
+.hire-us p, .btn-hire{
+    font-size: 20px;
+}
+.hire-us p{
+    color: rgba(255,255,255,.82);
+}
+
+.overlayer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 995px) {
+    .about-img{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #Architecture{
+      margin: 0 10px;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  #Architecture{
+    font-size: 30px !important;
+    margin: 0px 5px !important;
+    line-height: 40px;
+  }
 }

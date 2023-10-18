@@ -33,7 +33,7 @@ export default function Nav() {
                 <NavLink className='nav-link mx-2' to={'project'}>Single Project</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className='nav-link mx-2' to={'contactUs'}>Contact Us</NavLink>
+                <NavLink className='nav-link mx-2' to={'contactus'}>Contact Us</NavLink>
               </li>
 
             </ul>

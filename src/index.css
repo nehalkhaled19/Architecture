@@ -59,3 +59,9 @@ body {
 .over-flow:hover .img-transform {
     transform: scale(1.1);
 }
+.object{
+    object-fit: cover;
+}
+@media (max-width: 995px) {
+
+}

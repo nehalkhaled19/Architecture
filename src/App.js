@@ -21,7 +21,7 @@ export default function App() {
         { path:'services', element: <Services></Services> },
         { path:'works', element: <Works></Works> },
         { path:'project', element: <Project></Project> },
-        { path:'contactUs', element: <Contact></Contact> },
+        { path:'contactus', element: <Contact></Contact> },
 
       ]
     }
