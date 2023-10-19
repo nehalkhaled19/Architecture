@@ -17,16 +17,16 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return <div>
     {/* carousel */}
-    <div id="carouselExampleRide" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
-      <div class="carousel-inner ">
-        <div class="carousel-item active">
-          <img src={img3} class="d-block home-bg w-100" alt="home1" />
+    <div id="carouselExampleRide" className="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+      <div className="carousel-inner ">
+        <div className="carousel-item active">
+          <img src={img3} className="d-block home-bg w-100" alt="home1" />
         </div>
-        <div class="carousel-item">
-          <img src={img2} class="d-block home-bg w-100" alt="home2" />
+        <div className="carousel-item">
+          <img src={img2} className="d-block home-bg w-100" alt="home2" />
         </div>
-        <div class="carousel-item">
-          <img src={img1} class="d-block home-bg w-100" alt="home3" />
+        <div className="carousel-item">
+          <img src={img1} className="d-block home-bg w-100" alt="home3" />
         </div>
       </div>
  {/* body*/}
@@ -67,15 +67,15 @@ export default function Home() {
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
                 <li className='my-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>  Aliquam fermentum lorem quis posuere mattis.</span>
                 </li>
                 <li className='my-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
                 <li className='mt-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>
                 </li>
@@ -99,15 +99,15 @@ export default function Home() {
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
               <ul className='list-unstyled'>
                 <li className='my-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>  Aliquam fermentum lorem quis posuere mattis.</span>
                 </li>
                 <li className='my-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'> Sed mollis sapien erat id pellentesque libero.</span>
                 </li>
                 <li className='mt-2'>
-                  <i class=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
+                  <i className=" py-3 me-2 fa-solid fa-lg fa-check" ></i>
                   <span className='main-text-color'>Pellentesque nisl id semper bibendum.
                   </span>
                 </li>
@@ -131,28 +131,28 @@ export default function Home() {
         <div className="row justify-content-center align-items-center">
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class=" fa-regular fa-2xl fa-thumbs-up"></i>
+              <i className=" fa-regular fa-2xl fa-thumbs-up"></i>
               <p className='counter-num my-3'>1400</p>
               <p className='counter-title'>Page Likes</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class=" fa-solid fa-lg fa-shop"></i>
+              <i className=" fa-solid fa-lg fa-shop"></i>
               <p className='counter-num my-3'>64</p>
               <p className='counter-title'>Locations</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class=" fa-regular fa-lg fa-lightbulb"></i>
+              <i className=" fa-regular fa-lg fa-lightbulb"></i>
               <p className='counter-num my-3'>960</p>
               <p className='counter-title'>Great Ideas</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
-              <i class=" fa-regular fa-lg fa-comment"></i>
+              <i className=" fa-regular fa-lg fa-comment"></i>
               <p className='counter-num my-3'>420</p>
               <p className='counter-title'>Comments</p>
             </div>
@@ -180,7 +180,7 @@ export default function Home() {
         <div className='row py-4'>
           <div className="col-lg-3 col-md-6">
             <div className='d-flex align-items-baseline '>
-              <i class="mb-2 fa-regular fa-lg fa-lightbulb me-3"></i>
+              <i className="mb-2 fa-regular fa-lg fa-lightbulb me-3"></i>
               <div>
                 <h5>Creativity</h5>
                 <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna.</p>
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className='d-flex align-items-baseline '>
-              <i class="mb-2 fa-solid fa-lg fa-pencil me-3"></i>
+              <i className="mb-2 fa-solid fa-lg fa-pencil me-3"></i>
               <div>
                 <h5>Unique Design</h5>
                 <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna.</p>
@@ -198,7 +198,7 @@ export default function Home() {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className='d-flex align-items-baseline '>
-              <i class="mb-2 fa-regular fa-lg fa-heart me-3"></i>
+              <i className="mb-2 fa-regular fa-lg fa-heart me-3"></i>
               <div>
                 <h5>Satisfied Clients</h5>
                 <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna.</p>
@@ -207,7 +207,7 @@ export default function Home() {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className='d-flex align-items-baseline '>
-              <i class="mb-2 fa-regular fa-lg fa-newspaper me-3"></i>
+              <i className="mb-2 fa-regular fa-lg fa-newspaper me-3"></i>
               <div>
                 <h5>Portfolios</h5>
                 <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna.</p>
@@ -227,21 +227,21 @@ export default function Home() {
         <div className='mt-4 container w-100 d-flex justify-content-center align-items-center'>
 
           <OwlCarousel className='owl-theme  my-5' loop dots items={2} responsive={{ 0: { items: 1 }, 979: { items: 2 } }}>
-            <div class='item text-start mx-2'>
+            <div className='item text-start mx-2'>
               <div className='testimonials-item rounded-2 my-4'>
                 <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
               </div>
               <p className='client m-0  '>Michael Moore</p>
               <p className='company m-0'>Apple</p>
             </div>
-            <div class='item text-start mx-2'>
+            <div className='item text-start mx-2'>
               <div className='testimonials-item rounded-2 my-4'>
                 <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
               </div>
               <p className='client m-0  '>Michael Moore</p>
               <p className='company m-0'>FaceBook</p>
             </div>
-            <div class='item text-start mx-2'>
+            <div className='item text-start mx-2'>
               <div className='testimonials-item rounded-2 my-4'>
                 <p className='p-4'>Humanitatis per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.</p>
               </div>

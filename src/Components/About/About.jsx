@@ -63,33 +63,33 @@ export default function About() {
       {/* section 3 method */}
       <div className='our-methood py-5'>
         <div className='w-100 text-center py-3'>
-          <i class="fa-solid fa-infinity fa-2xl mb-2 " style={{ color: '#d8b478' }}></i>
+          <i className="fa-solid fa-infinity fa-2xl mb-2 " style={{ color: '#d8b478' }}></i>
           <h3 className='my-4'>Our Methods</h3>
           <p className='text-muted'>Learn more about us.</p>
         </div>
         <div className='container'>
           <div >
 
-            <ul class="nav nav-pills mb-3 justify-content-center tabs" id="pills-tab" role="tablist">
-              <li class="nav-itemy" role="presentation">
-                <button class="nav-link  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
+            <ul className="nav nav-pills mb-3 justify-content-center tabs" id="pills-tab" role="tablist">
+              <li className="nav-itemy" role="presentation">
+                <button className="nav-link  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
                   <span>OUR GOAL</span>
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="methods-tab" data-bs-toggle="pill" data-bs-target="#methods" type="button" role="tab" aria-controls="methods" aria-selected="false">
+              <li className="nav-item" role="presentation">
+                <button className="nav-link" id="methods-tab" data-bs-toggle="pill" data-bs-target="#methods" type="button" role="tab" aria-controls="methods" aria-selected="false">
                   <span>OUR METHODS</span>
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="results-tab" data-bs-toggle="pill" data-bs-target="#results" type="button" role="tab" aria-controls="results" aria-selected="false">
+              <li className="nav-item" role="presentation">
+                <button className="nav-link" id="results-tab" data-bs-toggle="pill" data-bs-target="#results" type="button" role="tab" aria-controls="results" aria-selected="false">
                   <span>OUR RESULTS</span>
 
                 </button>
               </li>
             </ul>
-            <div class="tab-content py-3" id="pills-tabContent">
-              <div class="tab-pane   fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabindex="0">
+            <div className="tab-content py-3" id="pills-tabContent">
+              <div className="tab-pane   fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabindex="0">
                 <div className="row">
                   <div className="col-md-6 tabs-text-color">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Nulla sollicitudin lorem quis
@@ -99,10 +99,10 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabindex="0">
+              <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabindex="0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Phasellus mattis efficitur sollicitudin. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Proin nec dui congue neque cursus ullamcorper. Sed ipsum risus, ultrices a posuere ac, molestie sed tortor. Aenean gravida enim velit, ut auctor eros porttitor in. Phasellus consectetur a est dictum aliquet. Nulla et neque efficitur, auctor purus vel, ornare tellus. Aenean non tellus elementum purus feugiat ullamcorper a ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam fermentum tristique ante.
               </div>
-              <div class="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabindex="0">
+              <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabindex="0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Phasellus mattis efficitur sollicitudin. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Proin nec dui congue neque cursus ullamcorper. Sed ipsum risus, ultrices a posuere ac, molestie sed tortor. Aenean gravida enim velit, ut auctor eros porttitor in. Phasellus consectetur a est dictum aliquet. Nulla et neque efficitur, auctor purus vel, ornare tellus. Aenean non tellus elementum purus feugiat ullamcorper a ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam fermentum tristique ante.
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function About() {
       {/* section 4 team*/}
       <div className='main-bg-color our-methood  py-5'>
         <div className='w-100 text-center py-3 '>
-          <i class="fa-solid fa-user fa-2xl" style={{ color: '#d8b478' }}></i>
+          <i className="fa-solid fa-user fa-2xl" style={{ color: '#d8b478' }}></i>
           <h3 className='main-font-weight my-4'>Our Dedicated Team</h3>
           <p className='text-muted'>Learn more about our architecture experts.</p>
         </div>
@@ -127,8 +127,8 @@ export default function About() {
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
               <div className='over-flow position-relative'>
               <img src={person3} alt="person1" className='w-100' />
-              <div class="social d-flex align-items-center  justify-content-center">
-                <div class="d-flex align-items-center position-absolute justify-content-center">
+              <div className="social d-flex align-items-center  justify-content-center">
+                <div className="d-flex align-items-center position-absolute justify-content-center">
                 <div className='icon-holder2 icon-facebook mx-1  d-flex justify-content-center align-items-center '>
                             <i className='fa-brands fa-facebook-f '></i>
                         </div>
@@ -155,8 +155,8 @@ export default function About() {
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
               <div className='over-flow position-relative'>
               <img src={person2} alt="person2" className='w-100' />
-              <div class="social d-flex align-items-center  justify-content-center">
-                <div class="d-flex align-items-center position-absolute justify-content-center">
+              <div className="social d-flex align-items-center  justify-content-center">
+                <div className="d-flex align-items-center position-absolute justify-content-center">
                 <div className='icon-holder2 icon-facebook mx-1  d-flex justify-content-center align-items-center '>
                             <i className='fa-brands fa-facebook-f '></i>
                         </div>
@@ -183,8 +183,8 @@ export default function About() {
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
               <div className='over-flow position-relative'>
               <img src={person1} alt="person3" className='w-100' />
-              <div class="social d-flex align-items-center  justify-content-center">
-                <div class="d-flex align-items-center position-absolute justify-content-center">
+              <div className="social d-flex align-items-center  justify-content-center">
+                <div className="d-flex align-items-center position-absolute justify-content-center">
                 <div className='icon-holder2 icon-facebook mx-1  d-flex justify-content-center align-items-center '>
                             <i className='fa-brands fa-facebook-f '></i>
                         </div>

@@ -24,27 +24,27 @@ export default function Footer() {
                             <h4 className='mb-3'>Opening Hours</h4>
                             <ul className='list-unstyled'>
                                 <li className=' footer-border '>
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Monday 10AM – 9PM</span>
                                 </li>
                                 <li className=' footer-border '>
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Tuesday 10AM - 9PM</span>
                                 </li>
                                 <li className=' footer-border '>
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Wednesday 10AM - 9PM</span>
                                 </li>
                                 <li className=' footer-border '>
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Thursday 10AM - 10PM</span>
                                 </li>
                                 <li className=' footer-border '>
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Friday 10AM - 10PM</span>
                                 </li>
                                 <li >
-                                    <i class=" py-3 fa-solid fa-angle-right" ></i>
+                                    <i className=" py-3 fa-solid fa-angle-right" ></i>
                                     <span> Weekends 10AM - 11PM
                                     </span>
                                 </li>
@@ -57,19 +57,19 @@ export default function Footer() {
                             <h4 className='mb-3 '>Contact Details </h4>
                             <ul className='list-unstyled'>
                                 <li className=' py-3 footer-border '>
-                                    <i class=" me-2 fa-solid fa-location-dot" ></i>
+                                    <i className=" me-2 fa-solid fa-location-dot" ></i>
                                     <span>Manchester Road 123-78B, Silictown 7854MD, Great Country</span>
                                 </li>
                                 <li className=' py-3 footer-border '>
-                                    <i class=" me-2 fa-solid fa-phone" ></i>
+                                    <i className=" me-2 fa-solid fa-phone" ></i>
                                     <span> 123 456 7893</span>
                                 </li>
                                 <li className=' py-3 footer-border '>
-                                    <i class=" me-2 fa-solid fa-envelope" ></i>
+                                    <i className=" me-2 fa-solid fa-envelope" ></i>
                                     <span> hello@sitename.com</span>
                                 </li>
                                 <li className=' py-3' >
-                                    <i class="fa-solid me-2 fa-earth-americas"></i>
+                                    <i className="fa-solid me-2 fa-earth-americas"></i>
                                     <span> http://www.sitename.com</span>
                                 </li>
 
