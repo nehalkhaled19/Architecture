@@ -110,3 +110,6 @@
 .content{
     height: 90%;
 }
+#modal{
+    transition: all 0.5s;
+}

@@ -189,7 +189,7 @@ export default function Services() {
               </div>
               <img id='videoImg' className='w-100 h-100 rounded-3' src={img4} alt="arch4" />
 
-              <iframe id='videoo' className='w-100 h-100 rounded-3 position-absolute top-0 d-none' src="https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe id='videoo' className='w-100 h-100 rounded-3 position-absolute top-0 d-none' src="https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 
 

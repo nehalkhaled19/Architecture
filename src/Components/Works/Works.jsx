@@ -30,10 +30,33 @@ export default function Works() {
     })
     // close modal
     document.querySelector(".i-close").addEventListener('click', () => {
-      $("#modal").addClass('d-none')
+      $("#modal").fadeOut(1000)
+    })
+    // next img
+    $(".arrow-right").on('click', (e) => {
+      currentIndex++
+      console.log(currentIndex);
+  
+      if (currentIndex == imgsSrc.length) {
+        currentIndex = 0
+      }
+      src = imgsSrc[currentIndex]
+      $('.content').attr('src', src)
+    })
+    // prev img
+    $(".arrow-left").on('click', () => {
+      currentIndex--
+      console.log(currentIndex);
+  
+      if (currentIndex < 0) {
+        currentIndex = imgsSrc.length - 1
+      }
+      src = imgsSrc[currentIndex]
+      $('.content').attr('src', src)
     })
 
   }, [])
+
   // get img src
   function getimgs(tab = '#goals') {
     imgsSrc = []
@@ -43,26 +66,7 @@ export default function Works() {
       imgsSrc.push(e.getAttribute('src'))
     });
   }
-  $(".arrow-right").on('click', () => {
-    currentIndex++
-    console.log(currentIndex);
-
-    if (currentIndex == imgsSrc.length) {
-      currentIndex = 0
-    }
-    src = imgsSrc[currentIndex]
-    $('.content').attr('src', src)
-  })
-  $(".arrow-left").on('click', () => {
-    currentIndex--
-    console.log(currentIndex);
-
-    if (currentIndex < 0) {
-      currentIndex = imgsSrc.length - 1
-    }
-    src = imgsSrc[currentIndex]
-    $('.content').attr('src', src)
-  })
+ 
 
 
   return (
@@ -97,7 +101,7 @@ export default function Works() {
           </li>
         </ul>
         <div className="tab-content py-3" id="pills-tabContent">
-          <div className="tab-pane fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabindex="0">
+          <div className="tab-pane fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">
             <div className='container'>
               <div className="row g-4">
                 <div className="col-lg-4 col-md-6">
@@ -199,7 +203,7 @@ export default function Works() {
             </div>
 
           </div>
-          <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabindex="0">
+          <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabIndex="0">
             <div className="container ">
               <div className="row g-4">
                 <div className="col-lg-4 col-md-6">
@@ -244,7 +248,7 @@ export default function Works() {
             </div>
 
           </div>
-          <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabindex="0">
+          <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabIndex="0">
             <div className="container">
               <div className="row g-4">
 
@@ -313,22 +317,16 @@ export default function Works() {
         </div>
       </div>
 
-
       {/* modal */}
       <div id='modal' className=' works-modal '>
-
         <div className='w-50 content'>
           <div className='text-end mt-2'>
             <i className="fa-solid fa-xmark i-close my-3 fa-xl cursor-pointer " ></i>
           </div>
           <img src='' className='w-100 content object' alt="work-modal" />
         </div>
-        <div className=' cursor-pointer'>
-          <i class="fa-solid fa-chevron-right fa-2xl arrow-right bg-info"></i>
-        </div>
-        <div className='cursor-pointer'>
-          <i class="fa-solid fa-chevron-left fa-2xl arrow-left"></i>
-        </div>
+        <i className="fa-solid cursor-pointer fa-chevron-right fa-2xl arrow-right "></i>
+        <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
       </div>
     </div>
   )
