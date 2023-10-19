@@ -18,11 +18,13 @@ export default function Works() {
     // to get all imgs inside the tab
     $(".nav-link").on('click', (e) => {
       targetTab = e.target.getAttribute('data-bs-target')
+    
+
       getimgs(targetTab)
     })
     // open modal
     $(".openModal").on('click', (e) => {
-      $("#modal").removeClass('d-none').addClass('d-flex')
+      $("#modal").fadeIn(500).addClass('d-flex').removeClass('d-none')
       src = e.target.getAttribute('imgsrc')
       $('.content').attr('src', src)
       currentIndex = imgsSrc.indexOf(src)
@@ -30,13 +32,15 @@ export default function Works() {
     })
     // close modal
     document.querySelector(".i-close").addEventListener('click', () => {
-      $("#modal").fadeOut(1000)
+      $("#modal").fadeOut(500, function () {
+        $("#modal").removeClass('d-flex').addClass('d-none')
+      })
     })
     // next img
     $(".arrow-right").on('click', (e) => {
       currentIndex++
       console.log(currentIndex);
-  
+
       if (currentIndex == imgsSrc.length) {
         currentIndex = 0
       }
@@ -47,7 +51,7 @@ export default function Works() {
     $(".arrow-left").on('click', () => {
       currentIndex--
       console.log(currentIndex);
-  
+
       if (currentIndex < 0) {
         currentIndex = imgsSrc.length - 1
       }
@@ -61,12 +65,12 @@ export default function Works() {
   function getimgs(tab = '#goals') {
     imgsSrc = []
     currentIndex = 0
-    let imgs = Array.from(document.querySelectorAll(`${tab}Imgs`))
+    let images = document.querySelectorAll(`${tab}Imgs`)
+    let imgs = Array.from(images)
     imgs.forEach(e => {
       imgsSrc.push(e.getAttribute('src'))
     });
   }
- 
 
 
   return (
@@ -83,7 +87,7 @@ export default function Works() {
       {/* nav & tabs */}
       <div className='container pb-5 d-flex flex-column justify-content-center'>
         <ul className="nav nav-pills mb-3 justify-content-center works-tabs" id="pills-tab" role="tablist">
-          <li className="nav-itemy" role="presentation">
+        <li className="nav-itemy" role="presentation">
             <button className="nav-link py-0  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
               <span data-bs-target="#goals">Show All</span>
             </button>
@@ -101,8 +105,8 @@ export default function Works() {
           </li>
         </ul>
         <div className="tab-content py-3" id="pills-tabContent">
-          <div className="tab-pane fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">
-            <div className='container'>
+          <div className="tab-pane   active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">     
+                 <div className='container'>
               <div className="row g-4">
                 <div className="col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
@@ -203,7 +207,7 @@ export default function Works() {
             </div>
 
           </div>
-          <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabIndex="0">
+          <div className="tab-pane  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabIndex="0">
             <div className="container ">
               <div className="row g-4">
                 <div className="col-lg-4 col-md-6">
@@ -248,7 +252,7 @@ export default function Works() {
             </div>
 
           </div>
-          <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabIndex="0">
+          <div className="tab-pane  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabIndex="0">
             <div className="container">
               <div className="row g-4">
 
@@ -318,7 +322,7 @@ export default function Works() {
       </div>
 
       {/* modal */}
-      <div id='modal' className=' works-modal '>
+      <div id='modal' className=' works-modal d-none '>
         <div className='w-50 content'>
           <div className='text-end mt-2'>
             <i className="fa-solid fa-xmark i-close my-3 fa-xl cursor-pointer " ></i>
@@ -328,6 +332,8 @@ export default function Works() {
         <i className="fa-solid cursor-pointer fa-chevron-right fa-2xl arrow-right "></i>
         <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
       </div>
+
+   
     </div>
   )
 }
