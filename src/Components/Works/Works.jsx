@@ -116,7 +116,7 @@ export default function Works() {
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/'}>
+                         <Link to={'../project/'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -138,7 +138,7 @@ export default function Works() {
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/holyday-residence'}>
+                         <Link to={'../project/holyday-residence'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -160,7 +160,7 @@ export default function Works() {
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/co-working-design'}>
+                         <Link to={'../project/co-working-design'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -182,7 +182,7 @@ export default function Works() {
                       <h4>Interior Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/concrete-house-on-lake'}>
+                         <Link to={'../project/concrete-house-on-lake'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -204,7 +204,7 @@ export default function Works() {
                       <h4>Concrete House on Lake</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                         <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/interior-design'}>
+                         <Link to={'../project/interior-design'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -233,7 +233,7 @@ export default function Works() {
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/'}>
+                         <Link to={'../project/'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -255,7 +255,7 @@ export default function Works() {
                       <h4>Interior Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/interior-design'}>
+                         <Link to={'../project/interior-design'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -285,7 +285,7 @@ export default function Works() {
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/holyday-residence'}>
+                         <Link to={'../project/holyday-residence'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -307,7 +307,7 @@ export default function Works() {
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/co-working-design'}>
+                         <Link to={'../project/co-working-design'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>
@@ -329,7 +329,7 @@ export default function Works() {
                       <h4>Concrete House on Lake</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                          <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'/Architecture/project/concrete-house-on-lake'}>
+                         <Link to={'../project/concrete-house-on-lake'}>
                          <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
 
                          </Link>

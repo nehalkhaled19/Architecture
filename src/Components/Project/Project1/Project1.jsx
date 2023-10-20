@@ -85,7 +85,7 @@ export default function Project1() {
                   </div>
                 </div>
               </li>
-              <li className=' py-3 ' >
+              <li className=' py-2' >
               <div className="row">
                   <div className="col-lg-5 col-md-4 col-sm-3">
                   <span className='About-Project-p n'>Date:</span>
