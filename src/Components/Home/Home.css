@@ -150,11 +150,16 @@
     font-size: 1em;
     opacity: .7;
 }
-
-
-
+/* contact */
 .map {
     height: 500px;
+}
+.contact-icon:hover{
+    background-color: #d8b478 !important;
+    border-color: #d8b478 !important;
+}
+.contact-icon:hover i{
+    color: white !important;
 }
 
 /* Large desktop */

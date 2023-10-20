@@ -62,28 +62,11 @@
     font-size: 16px;
     color: #000000b3;
 }
-
-.owl-carousel {
-    position: relative;
-}
-
 .owl-dots {
     position: relative;
-    top: -15px;
+    top: -10px;
     opacity: 0.6;
 }
-/* .owl-dots span {
-  background-color: transparent ;
-  border: 2px solid white;
-} */
-/* .owl-dots span:hover, .owl-carousel:hover {
-    background-color: white !important;
-} */
-/* .owl-dots .active{
-    color:white ;
-}
-   */
-
 /* Landscape phones and down */
 @media (max-width: 767px) {
     .imgs-width-project {

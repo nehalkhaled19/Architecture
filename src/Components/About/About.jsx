@@ -12,6 +12,7 @@ export default function About() {
 
   return (
     <div className='about'>
+      {/* title */}
       <div className=' h-50'>
         <div className="conatiner py-5 about-title">
           <div className='about-text-color h-100 d-flex  flex-column justify-content-center text-center' >

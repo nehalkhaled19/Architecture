@@ -14,9 +14,10 @@ export default function Project5() {
   return (
     <div>
       {/* title */}
-      <section className=' h-50'>
+       {/* title */}
+       <section className=' h-50'>
         <div className="conatiner py-5 about-title">
-          <div className='about-text-color d-flex flex-column justify-content-center text-center' >
+          <div className='about-text-color h-100 d-flex flex-column justify-content-center text-center' >
             <h1 className='main-font-weight my-3'>Interior Design</h1>
             <div className='project-navbar'>
               <Link className='text-decoration-none mx-2 to-home' to={'/Architecture'}>
@@ -37,13 +38,13 @@ export default function Project5() {
 
             {/* carousel */}
             <OwlCarousel className='owl-theme ' dots items={1} loop  >
-              <div class='item w-100 h-100 d-flex justify-content-center align-items-center'>
+              <div class='item w-100 '>
                 <img src={img1} alt='home1' />
               </div>
-              <div class='item w-100 h-100 d-flex justify-content-center align-items-center'>
+              <div class='item w-100 '>
                 <img src={img2} alt='home2' />
               </div>
-              <div class='item w-100 h-100 d-flex justify-content-center align-items-center'>
+              <div class='item w-100 '>
                 <img src={img3} alt='home3' />
               </div>
 
@@ -51,7 +52,7 @@ export default function Project5() {
 
           </div>
           {/* About Project */}
-          <div className='col-lg-4 py-3 About-Project'>
+          <div className='col-lg-4 py-4 About-Project'>
             <h4>About Project</h4>
             <p className='About-Project-p'>
               Quibus occurrere bene pertinax miles explicatis ordinibus parans hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem proximos iam gestu terrebat sed eum in certamen alacriter consurgentem revocavere ductores rati intempestivum anceps subire certamen cum haut longe muri distarent, quorum tutela securitas poterat in solido locari cunctorum.

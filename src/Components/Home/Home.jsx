@@ -268,29 +268,29 @@ export default function Home() {
               <ul className='list-unstyled my-3 text-start'>
                 <li className='d-flex mx-0  my-3 align-items-baseline' >
 
-                  <div className='icon-holder me-3 bg-white border nn border-1 d-flex justify-content-center align-items-center '>
-                    <i className='fa-solid fa-map main-text-color  '></i>
+                  <div className='icon-holder me-3 bg-white border contact-icon border-1 d-flex justify-content-center align-items-center '>
+                    <i className='fa-solid fa-map main-text-color '></i>
                   </div>
                   <span className='main-text-color'>  Manchester St 123-78B, UK</span>
                 </li>
 
                 <li className='d-flex mx-0  my-3 align-items-baseline' >
 
-                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                  <div className='icon-holder me-3 bg-white contact-icon border border-1 d-flex justify-content-center align-items-center '>
                     <i className='fa-solid fa-phone main-text-color '></i>
                   </div>
                   <span className='main-text-color'> +46 123 456 789</span>
                 </li>
                 <li className='d-flex mx-0  my-3 align-items-baseline' >
 
-                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                  <div className='icon-holder me-3 bg-white contact-icon border border-1 d-flex justify-content-center align-items-center '>
                     <i className='fa-solid fa-headphones main-text-color '></i>
                   </div>
                   <span className='main-text-color'>  +37 431 456 789</span>
                 </li>
                 <li className='d-flex mx-0  my-3 align-items-baseline' >
 
-                  <div className='icon-holder me-3 bg-white border border-1 d-flex justify-content-center align-items-center '>
+                  <div className='icon-holder me-3 bg-white contact-icon border border-1 d-flex justify-content-center align-items-center '>
                     <i className='fa-solid fa-envelope main-text-color '></i>
                   </div>
                   <span className='main-text-color'>hello@sitename.com</span>
