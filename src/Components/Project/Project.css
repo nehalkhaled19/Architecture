@@ -1,0 +1,57 @@
+/* project-navbar */
+.project-navbar .to-home, .project-name{
+    color: #2e2d2d;
+    font-size: 20px;
+}
+.project-navbar .to-home{
+    color: #a49d9d;
+    transition: all 0.2s;
+}
+.project-navbar .to-home::after{
+    content: '/';
+    color: rgba(0, 0, 0, 0.2);
+margin: 0 0 0 5px;
+}
+
+.project-navbar .to-home:hover{
+    color: #d8b478
+}
+/* About Project */
+.About-Project h4{
+    color: #303030;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.About-Project-p{
+    color: #686868;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 27.9px;
+}
+.imgs-width-project {
+    width: 78% !important;
+}
+.About-Project-border{
+border-bottom:0.5px solid rgba(81, 79, 79, 0.212) ;
+}
+/* footer */
+.project-footer{
+    border-top: 1px solid #ada6a624;
+    background-color: #f5f5f5;
+}
+.project-footer span{
+   color: #aaa;
+   font-size: 13px;
+}
+.project-footer p{
+    font-size: 16px;
+    color: #000000b3;
+ }
+
+/* Landscape phones and down */
+@media (max-width: 767px) {
+    .imgs-width-project {
+        width: 100% !important;
+    }
+}

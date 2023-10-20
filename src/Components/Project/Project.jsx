@@ -1,7 +1,11 @@
 import React from 'react'
+import './Project.css'
+import { Outlet } from 'react-router-dom'
 
 export default function Project() {
   return (
-    <div>Project</div>
+    <div>
+      <Outlet></Outlet>
+    </div>
   )
 }

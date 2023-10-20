@@ -50,13 +50,14 @@
     width: 35px;
     height: 35px;
     background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    color: #333 !important;
 }
 
 .p-icon:hover {
     background-color: #333;
-    color: rgba(255, 255, 255);
-    ;
+}
+.p-icon:hover i{
+    color: rgba(255, 255, 255) !important;
 }
 
 .portfolio-icons {

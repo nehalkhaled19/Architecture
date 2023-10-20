@@ -9,7 +9,7 @@ import arhi3 from '../../images/archi-17.png'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import ow from 'react-owl-carousel'
+
 
 
 import { Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return <div>
     {/* carousel */}
-    <div id="carouselExampleRide" className="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide position-relative" data-bs-ride="carousel">
       <div className="carousel-inner ">
         <div className="carousel-item active">
           <img src={img3} className="d-block home-bg w-100" alt="home1" />
