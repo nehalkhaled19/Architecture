@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from '../Nav/Nav'
-import { Outlet } from 'react-router-dom'
+import { Form, Outlet, useLocation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 
+
+
 export default function Layout() {
+  const ScrollToTop = () => {
+    // Extracts pathname property(key) from an object
+    const { pathname } = useLocation();
+  
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  }
+  ScrollToTop()
+
+  
   return (
     <div>
         <Nav></Nav>

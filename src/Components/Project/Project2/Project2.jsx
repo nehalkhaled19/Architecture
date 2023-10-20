@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../../images/archi-9-x.jpg'
+import $ from 'jquery'
 
 
 export default function Project2() {
+
   return (
     <div>
          {/* title */}
