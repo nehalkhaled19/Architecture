@@ -177,9 +177,10 @@ export default function Works() {
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img4} className='w-100 h-100 object ' alt="Interior Design" />
+                    <img id='goalsImgs' src={img4} className='w-100 h-100 object ' alt="Concrete House on Lake" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
-                      <h4>Interior Design</h4>
+                      <h4>Concrete House on Lake
+                      </h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                       <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
                          <Link to={'../project/concrete-house-on-lake'}>
@@ -199,9 +200,10 @@ export default function Works() {
                 </div>
                 <div className="col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img5} className='w-100 h-100 object ' alt="Concrete House on Lake" />
+                    <img id='goalsImgs' src={img5} className='w-100 h-100 object ' alt="Interior Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
-                      <h4>Concrete House on Lake</h4>
+                      <h4>Interior Design
+                      </h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                         <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
                          <Link to={'../project/interior-design'}>

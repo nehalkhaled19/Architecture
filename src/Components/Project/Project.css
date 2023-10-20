@@ -12,7 +12,9 @@
     color: rgba(0, 0, 0, 0.2);
 margin: 0 0 0 5px;
 }
-
+.imgs-project3{
+    width: 90%;
+}
 .project-navbar .to-home:hover{
     color: #d8b478
 }
@@ -53,5 +55,8 @@ border-bottom:0.5px solid rgba(81, 79, 79, 0.212) ;
 @media (max-width: 767px) {
     .imgs-width-project {
         width: 100% !important;
+    }
+    .imgs-project3{
+        width: 100%;
     }
 }
