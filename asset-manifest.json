@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Architecture/static/css/main.d0af518c.css",
-    "main.js": "/Architecture/static/js/main.23a9eb3d.js",
+    "main.js": "/Architecture/static/js/main.dd8d683d.js",
     "static/media/home-1.jpg": "/Architecture/static/media/home-1.95a0f56123ee519eea00.jpg",
     "static/media/archi-9-x.jpg": "/Architecture/static/media/archi-9-x.3e4bb8053d83c0b01648.jpg",
     "static/media/home-3.jpg": "/Architecture/static/media/home-3.f8de7d3f988eb081fc5e.jpg",
@@ -14,8 +14,11 @@
     "static/media/fa-solid-900.woff2": "/Architecture/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
     "static/media/fa-brands-400.woff2": "/Architecture/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
     "static/media/archi-17.png": "/Architecture/static/media/archi-17.1d9cf53e2c154e276604.png",
+    "static/media/archi-6-900x.jpg": "/Architecture/static/media/archi-6-900x.0c9e61467360094fbd92.jpg",
+    "static/media/archi-12-900x.jpg": "/Architecture/static/media/archi-12-900x.5e634ade7eb5ab48b41d.jpg",
     "static/media/archi-7-700x600.jpg": "/Architecture/static/media/archi-7-700x600.0405d0c6fe7fb114156f.jpg",
     "static/media/archi-9-600x600.jpg": "/Architecture/static/media/archi-9-600x600.566ca761394c324c6bde.jpg",
+    "static/media/archi-11-900x.jpg": "/Architecture/static/media/archi-11-900x.d85a0f575d4c17705b6d.jpg",
     "static/media/archi-18-800x600.jpg": "/Architecture/static/media/archi-18-800x600.1af7f970ea9b0b171d3b.jpg",
     "static/media/archi-11-700x600.jpg": "/Architecture/static/media/archi-11-700x600.741ba6b7304c921e36f2.jpg",
     "static/media/fa-regular-400.ttf": "/Architecture/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
@@ -31,10 +34,10 @@
     "static/media/fa-v4compatibility.woff2": "/Architecture/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/Architecture/index.html",
     "main.d0af518c.css.map": "/Architecture/static/css/main.d0af518c.css.map",
-    "main.23a9eb3d.js.map": "/Architecture/static/js/main.23a9eb3d.js.map"
+    "main.dd8d683d.js.map": "/Architecture/static/js/main.dd8d683d.js.map"
   },
   "entrypoints": [
     "static/css/main.d0af518c.css",
-    "static/js/main.23a9eb3d.js"
+    "static/js/main.dd8d683d.js"
   ]
 }
