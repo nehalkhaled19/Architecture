@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Architecture/static/css/main.e8475636.css",
-    "main.js": "/Architecture/static/js/main.799c07b0.js",
+    "main.css": "/Architecture/static/css/main.d0af518c.css",
+    "main.js": "/Architecture/static/js/main.23a9eb3d.js",
     "static/media/home-1.jpg": "/Architecture/static/media/home-1.95a0f56123ee519eea00.jpg",
     "static/media/archi-9-x.jpg": "/Architecture/static/media/archi-9-x.3e4bb8053d83c0b01648.jpg",
     "static/media/home-3.jpg": "/Architecture/static/media/home-3.f8de7d3f988eb081fc5e.jpg",
@@ -30,11 +30,11 @@
     "static/media/fa-v4compatibility.ttf": "/Architecture/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/Architecture/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/Architecture/index.html",
-    "main.e8475636.css.map": "/Architecture/static/css/main.e8475636.css.map",
-    "main.799c07b0.js.map": "/Architecture/static/js/main.799c07b0.js.map"
+    "main.d0af518c.css.map": "/Architecture/static/css/main.d0af518c.css.map",
+    "main.23a9eb3d.js.map": "/Architecture/static/js/main.23a9eb3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8475636.css",
-    "static/js/main.799c07b0.js"
+    "static/css/main.d0af518c.css",
+    "static/js/main.23a9eb3d.js"
   ]
 }
