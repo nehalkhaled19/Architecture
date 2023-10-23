@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Nav from '../Nav/Nav'
+// import Nav from '../Nav/Nav'
 import { Form, Outlet, useLocation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 
@@ -20,7 +20,7 @@ export default function Layout() {
   
   return (
     <div>
-        <Nav></Nav>
+        {/* <Nav></Nav> */}
         <Outlet/>
         <Footer></Footer>
     </div>

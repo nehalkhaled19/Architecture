@@ -35,10 +35,10 @@ export default function Project1() {
 
             {/* carousel */}
             <OwlCarousel className='owl-theme ' dots={false} items={1} loop  >
-              <div class='item w-100 h-100 d-flex justify-content-center align-items-center'>
+              <div className='item w-100 h-100 d-flex justify-content-center align-items-center'>
                 <img src={img1} className='imgs-width-project' alt='img1' />
               </div>
-              <div class='item w-100 h-100 d-flex justify-content-center align-items-center'>
+              <div className='item w-100 h-100 d-flex justify-content-center align-items-center'>
                 <img src={img2} className='imgs-width-project' alt='img2' />
               </div>
 
@@ -109,7 +109,7 @@ export default function Project1() {
                 <p>Holyday Residence</p>
               </div>
               <div >
-                <i class="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
+                <i className="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
               </div>
             </Link>
 

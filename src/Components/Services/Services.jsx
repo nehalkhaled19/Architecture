@@ -185,7 +185,7 @@ export default function Services() {
 
             <div className='video rounded-3' >
               <div className="d-flex position-absolute top-0 end-0 start-0  bottom-0 align-items-center justify-content-center">
-                <i id='videoIcon' class="fa-regular fa-circle-play cursor-pointer" ></i>
+                <i id='videoIcon' className="fa-regular fa-circle-play cursor-pointer" ></i>
               </div>
               <img id='videoImg' className='w-100 h-100 rounded-3' src={img4} alt="arch4" />
 

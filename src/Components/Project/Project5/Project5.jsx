@@ -38,13 +38,13 @@ export default function Project5() {
 
             {/* carousel */}
             <OwlCarousel className='owl-theme ' dots items={1} loop  >
-              <div class='item w-100 '>
+              <div className='item w-100 '>
                 <img src={img1} alt='home1' />
               </div>
-              <div class='item w-100 '>
+              <div className='item w-100 '>
                 <img src={img2} alt='home2' />
               </div>
-              <div class='item w-100 '>
+              <div className='item w-100 '>
                 <img src={img3} alt='home3' />
               </div>
 
@@ -108,7 +108,7 @@ export default function Project5() {
           <div className='d-flex'>
           <Link to={'../concrete-house-on-lake'} className='d-flex w-100 align-items-center text-decoration-none'>
           <div className='me-md-4 me-2' >
-                <i class="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
+                <i className="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
               </div>
               <div >
                 <span>Previuos Project</span>

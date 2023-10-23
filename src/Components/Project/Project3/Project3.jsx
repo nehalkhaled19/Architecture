@@ -87,7 +87,7 @@ export default function Project3() {
           <div className='d-flex'>
           <Link to={'../holyday-residence'} className='d-flex w-50 align-items-center text-decoration-none'>
           <div className='me-md-4 me-2' >
-                <i class="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
+                <i className="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
               </div>
               <div >
                 <span>Previuos Project</span>
@@ -101,7 +101,7 @@ export default function Project3() {
                 <p>Concrete House on Lake</p>
               </div>
               <div >
-                <i class="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
+                <i className="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
               </div>
             </Link>
 

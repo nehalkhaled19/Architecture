@@ -5,17 +5,41 @@ body {
 }
 
 /*  Navbar */
+nav{
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+
 .nav-link {
     color: white !important;
     font-size: 17px;
+    box-sizing: border-box;
 }
-
+.activeLink{
+    border: 2px white solid;
+    border-radius: 10px;
+ 
+}
 .nav-link:hover {
     color: white !important;
+    border: 2px white solid;
+    border-radius: 10px;
 }
-
+.navbar-brand img{
+    width: 40%;
+    margin-bottom: 5px;
+}
 .nav-link:focus .nav-link.active {
     color: white !important;
+}
+.navbar-bg{
+    background-color: #312e29 !important;
+    padding: 8px 0 !important;
+
+}
+.navbar-toggler:focus{
+box-shadow: 0 0 0 0;
+    
 }
 
 .max-width {
