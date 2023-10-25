@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css'
 import img1 from '../../images/home-1.jpg'
 import img2 from '../../images/home-2.jpg'
@@ -11,9 +11,18 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
 import NavHome from '../NavHome/NavHome';
+import $ from 'jquery'
 
 export default function Home() {
+
+  // loading
+  useEffect(() => {
+    $('.loading').fadeOut(1000)
+  }, [])
   return <>
+    <div className='loading position-fixed top-0 end-0 start-0 bottom-0 '>
+      <i class="fa-solid fa-spinner fa-spin fa-5x" style={{ color: '#1a1a1a' }}></i>
+    </div>
     <NavHome></NavHome>
     {/* carousel */}
     <div id="carouselExampleSlidesOnly" className="carousel slide position-relative" data-bs-ride="carousel">
@@ -28,20 +37,20 @@ export default function Home() {
           <img src={img1} className="d-block home-bg w-100" alt="home3" />
         </div>
       </div>
- {/* body*/}
- <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0">
-      <p className='p1'>Architect house</p>
-      <h1>Creativity & Contemporary</h1>
-      <p className='p2'>Whatever good things we build end up building us.</p>
-      <div >
-        <button className='btn my-2 btn-outline-light p-3 px-4 mx-2'>Learn More</button>
-        <Link to={'about'}>
-          <button className='btn my-2 btn-light p-3 px-4'>About us</button>
-        </Link>
+      {/* body*/}
+      <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0">
+        <p className='p1'>Architect house</p>
+        <h1>Creativity & Contemporary</h1>
+        <p className='p2'>Whatever good things we build end up building us.</p>
+        <div >
+          <button className='btn my-2 btn-outline-light p-3 px-4 mx-2'>Learn More</button>
+          <Link to={'about'}>
+            <button className='btn my-2 btn-light p-3 px-4'>About us</button>
+          </Link>
+        </div>
       </div>
     </div>
-    </div>
-   
+
     {/*second-section*/}
     <div className='second-section py-4 my-5 text-center d-flex '>
       <div className="container">
@@ -299,9 +308,9 @@ export default function Home() {
 
           </div>
           <div className="col-md-6 text-center map ">
-            
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988756678!2d0.0632084811207095!3d51.52873980478871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z2YTZhtiv2YbYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1697235415908!5m2!1sar!2seg" className='w-100 h-100 ' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-           
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988756678!2d0.0632084811207095!3d51.52873980478871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z2YTZhtiv2YbYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1697235415908!5m2!1sar!2seg" className='w-100 h-100 ' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+
           </div>
 
         </div>

@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
-// import Nav from '../Nav/Nav'
+import $ from 'jquery'
 import { Form, Outlet, useLocation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 
 
 
 export default function Layout() {
+
+  // at changing path
   const ScrollToTop = () => {
     // Extracts pathname property(key) from an object
     const { pathname } = useLocation();
-  
+
     // Automatically scrolls to top whenever pathname changes
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -17,12 +19,14 @@ export default function Layout() {
   }
   ScrollToTop()
 
-  
+
+
+
   return (
     <div>
-        {/* <Nav></Nav> */}
-        <Outlet/>
-        <Footer></Footer>
+  
+      <Outlet />
+      <Footer></Footer>
     </div>
   )
 }

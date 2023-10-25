@@ -6,6 +6,15 @@ body {
 :root{
     --dark-color: #262626;
 }
+/* loading */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 555555;
+    background-color: white;
+}
+
 
 /*  Navbar */
 nav {
