@@ -15,13 +15,68 @@ import $ from 'jquery'
 
 export default function Home() {
 
-  // loading
+  let counterSection;
+  let starting = false;
+
   useEffect(() => {
+    // loading
     $('.loading').fadeOut(1000)
+    counterSection = $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
   }, [])
+
+  // --------------------------------scrolling
+  window.addEventListener("scroll", function () {
+    let scrollingTop = $(this.window).scrollTop()
+
+    // counter
+    if (scrollingTop >= counterSection) {
+      if (!starting) {
+        handleCounter()
+      }
+      starting = true;
+    }
+
+  })
+  //counter function
+  function handleCounter() {
+    const counters = document.querySelectorAll('.counter-num');
+
+    counters.forEach(counter => {
+        // Set the initial value of the counter to 0
+        counter.innerText = '0';
+    
+        // Function to update 
+        const updateCounter = () => {
+            // Get the target value from the 'data-target' attribute of the counter element
+            const target = +counter.getAttribute('data-target');
+    
+            // Get the current value of the counter
+            const current = +counter.innerText;
+    
+            // Calculate the increment value
+            const increment = target / 100;
+    
+            // Check if the current value is less than the target value
+            if (current < target) {
+                // Increment the counter value and update the display
+                counter.innerText = `${Math.ceil(current + increment)}`;
+                // Call the updateCounter function again after a short delay (1 millisecond)
+                setTimeout(updateCounter, 15);
+            } else {
+                // If the current value is greater than or equal to the target value, set the counter to the target value
+                counter.innerText = target;
+            }
+        }
+    
+        // Call the updateCounter function to start the counter animation
+        updateCounter();
+    });
+
+  }
+
   return <>
     <div className='loading position-fixed top-0 end-0 start-0 bottom-0 '>
-      <i class="fa-solid fa-spinner fa-spin fa-5x" style={{ color: '#1a1a1a' }}></i>
+      <i className="fa-solid fa-spinner fa-spin fa-5x" style={{ color: '#1a1a1a' }}></i>
     </div>
     <NavHome></NavHome>
     {/* carousel */}
@@ -50,7 +105,6 @@ export default function Home() {
         </div>
       </div>
     </div>
-
     {/*second-section*/}
     <div className='second-section py-4 my-5 text-center d-flex '>
       <div className="container">
@@ -63,9 +117,9 @@ export default function Home() {
     <div className='third-section py-4 my-5   '>
       <div className="container">
         <div className="row ">
-          <div className="col-md-6 text-center d-flex align-items-center  ">
-            <div>
-              <img src={arhi1} className='imgs-width' alt="arhi1" />
+          <div className="col-md-6 bg-info text-center d-flex align-items-center  ">
+            <div className='try1'>
+              <img src={arhi1} className='imgs-width nn' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
@@ -134,34 +188,34 @@ export default function Home() {
 
     </div>
     {/*counter-section*/}
-    <div className='home-counter py-5  py-3'>
+    <div id='counterSection' className='home-counter py-5  py-3'>
       <div className="container ">
         <div className="row justify-content-center align-items-center">
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-regular fa-2xl fa-thumbs-up"></i>
-              <p className='counter-num my-3'>1400</p>
+              <p className='counter-num my-3' data-target="1400"></p>
               <p className='counter-title'>Page Likes</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-solid fa-lg fa-shop"></i>
-              <p className='counter-num my-3'>64</p>
+              <p className='counter-num my-3' data-target="64"></p>
               <p className='counter-title'>Locations</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-regular fa-lg fa-lightbulb"></i>
-              <p className='counter-num my-3'>960</p>
+              <p className='counter-num my-3' data-target="960"></p>
               <p className='counter-title'>Great Ideas</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-regular fa-lg fa-comment"></i>
-              <p className='counter-num my-3'>420</p>
+              <p className='counter-num my-3' data-target="420"></p>
               <p className='counter-title'>Comments</p>
             </div>
           </div>

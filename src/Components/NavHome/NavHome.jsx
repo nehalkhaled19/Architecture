@@ -8,9 +8,7 @@ export default function NavHome() {
 
   // to change navbar bgcolor
   window.addEventListener("scroll", function () {
-
     let scrollingTop = $(this.window).scrollTop()
-    console.log(scrollingTop);
     scrollingTop > 30 ? $('nav').addClass('navbarHome-bg ') : $('nav').removeClass('navbarHome-bg ')
   })
 

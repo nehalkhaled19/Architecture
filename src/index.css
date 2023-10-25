@@ -15,7 +15,10 @@ body {
     background-color: white;
 }
 
-
+.nn{
+    position: relative;
+    right: 300px;
+}
 /*  Navbar */
 nav {
     padding: 15px 0;
