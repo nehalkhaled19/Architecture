@@ -1,8 +1,10 @@
 import React from 'react'
 import './Contact.css'
+import Nav from '../Nav/Nav'
 export default function Contact() {
   return (
-    <div>
+    <>
+    <Nav></Nav>
       {/* title */}
       <section className='h-50'>
         <div className="conatiner py-5 about-title">
@@ -92,6 +94,6 @@ export default function Contact() {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988756678!2d0.0632084811207095!3d51.52873980478871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z2YTZhtiv2YbYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1697235415908!5m2!1sar!2seg" className='w-100 h-100 ' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>
-    </div>
+    </>
   )
 }

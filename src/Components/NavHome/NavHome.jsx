@@ -11,15 +11,14 @@ export default function NavHome() {
 
     let scrollingTop = $(this.window).scrollTop()
     console.log(scrollingTop);
-    scrollingTop > 30 ? $('nav').addClass('navbar-bg') : $('nav').removeClass('navbar-bg')
+    scrollingTop > 30 ? $('nav').addClass('navbarHome-bg ') : $('nav').removeClass('navbarHome-bg ')
   })
 
   // on click on navbar button
   function navBg() {
-    $('nav').toggleClass('navbar-bg')
+    $('nav').addClass('navbarHome-bg ')
   }
-  //
-  // $('nav .container').css('padding' , '0px')
+  
   return <>
     <nav className="fixed-top py-4  navbar navbar-expand-lg bg-transparent ">
       <div className="container px-2">
@@ -32,24 +31,24 @@ export default function NavHome() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto ">
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={''}>Home</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2  '} to={''}>Home</NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={'about'}>About</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2 '} to={'about'}>About</NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={'services'}>Services</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2 '} to={'services'}>Services</NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={'works'}>Works</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2 '} to={'works'}>Works</NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={'project'}>Single Project</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2 " : 'nav-link ligh-nav px-2'} to={'project'}>Single Project</NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link activeLink px-2" : 'nav-link px-2 '} to={'contactus'}>Contact Us</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2 " : 'nav-link ligh-nav px-2'} to={'contactus'}>Contact Us</NavLink>
             </li>
 
           </ul>

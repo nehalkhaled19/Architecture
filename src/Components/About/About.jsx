@@ -5,12 +5,14 @@ import img2 from '../../images/archi-15-800x600.jpg'
 import person1 from '../../images/person1-600x600.jpg'
 import person2 from '../../images/person2-600x600.jpg'
 import person3 from '../../images/person3-600x600.jpg'
+import Nav from '../Nav/Nav'
 
 
 
 export default function About() {
 
-  return (
+  return <>
+  <Nav></Nav>
     <div className='about'>
       {/* title */}
       <div className=' h-50'>
@@ -212,5 +214,5 @@ export default function About() {
         </div>
       </div>
     </div >
-  )
+  </>
 }

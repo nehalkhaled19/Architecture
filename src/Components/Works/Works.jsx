@@ -7,6 +7,7 @@ import img4 from '../../images/archi-7-700x600.jpg'
 import img5 from '../../images/archi-4-700x640.jpg'
 import $ from 'jquery'
 import { Link } from 'react-router-dom'
+import Nav from '../Nav/Nav'
 
 export default function Works() {
 
@@ -74,7 +75,8 @@ export default function Works() {
   }
 
 
-  return (
+  return <>
+  <Nav></Nav>
     <div className='position-relative'>
       {/* title */}
       <section className=' h-50'>
@@ -368,5 +370,5 @@ export default function Works() {
 
    
     </div>
-  )
+    </>
 }

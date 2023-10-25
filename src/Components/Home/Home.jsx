@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import NavHome from '../NavHome/NavHome';
 
 export default function Home() {
-  return <div>
+  return <>
     <NavHome></NavHome>
     {/* carousel */}
     <div id="carouselExampleSlidesOnly" className="carousel slide position-relative" data-bs-ride="carousel">
@@ -309,7 +309,7 @@ export default function Home() {
 
     </div>
 
-  </div >
+  </ >
 
 
 }

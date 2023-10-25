@@ -3,43 +3,62 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
 }
+:root{
+    --dark-color: #262626;
+}
 
 /*  Navbar */
-nav{
-    padding: 10px 0;
+nav {
+    padding: 15px 0;
     transition: all 0.5s;
 }
 
 .nav-link {
-    color: white !important;
+    color: white ;
     font-size: 17px;
-    box-sizing: border-box;
-}
-.activeLink{
-    border: 2px white solid;
+    border: 2px solid transparent;
     border-radius: 10px;
- 
+    transition: all 0.1s;
+    padding: 5px 0;
+    margin: 5px 0;
 }
-.nav-link:hover {
-    color: white !important;
-    border: 2px white solid;
+.activeLink {
+    border: 2px solid;
+    font-weight: 500;
+}
+/* light nav */
+.ligh-nav:hover {
+    color: white ;
+    border: 2px solid;
     border-radius: 10px;
 }
-.navbar-brand img{
-    width: 40%;
+.navbar-brand img {
+    width: 50%;
     margin-bottom: 5px;
 }
-.nav-link:focus .nav-link.active {
-    color: white !important;
+.ligh-nav:focus .ligh-nav.active {
+    color: white ;
 }
-.navbar-bg{
+/* dark nav */
+.dark-nav{
+    color: var(--dark-color);
+}
+.dark-nav:focus .dark-nav.active {
+    color: var(--dark-color);
+}
+.dark-nav:hover {
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+    color: var(--dark-color) !important;
+}
+.navbarHome-bg {
     background-color: #312e29 !important;
-    padding: 8px 0 !important;
-
+    padding: 10px 0 !important;
 }
-.navbar-toggler:focus{
-box-shadow: 0 0 0 0;
-    
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+
 }
 
 .max-width {
@@ -73,9 +92,11 @@ box-shadow: 0 0 0 0;
 .main-bg-color {
     background-color: #f8f8f8;
 }
+
 .img-transform {
     transition: all 0.5s ease 0s;
 }
+
 .over-flow {
     overflow: hidden;
 }
@@ -83,9 +104,9 @@ box-shadow: 0 0 0 0;
 .over-flow:hover .img-transform {
     transform: scale(1.1);
 }
-.object{
+
+.object {
     object-fit: cover;
 }
-@media (max-width: 995px) {
 
-}
+@media (max-width: 995px) {}

@@ -7,6 +7,7 @@ import $ from 'jquery'
 import '../About/About.css'
 import './Services.css'
 import { Link } from 'react-router-dom'
+import Nav from '../Nav/Nav'
 
 
 export default function Services() {
@@ -24,7 +25,9 @@ export default function Services() {
 
 
 
-  return (
+  return <>
+  <Nav></Nav>
+ 
     <div className='services'>
       {/* title */}
       <section className=' h-50'>
@@ -218,6 +221,5 @@ export default function Services() {
       </section>
 
     </div>
-
-  )
+    </>
 }
