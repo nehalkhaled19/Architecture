@@ -15,18 +15,24 @@ import $ from 'jquery'
 
 export default function Home() {
 
+  let Section1;
+  let Section2;
   let counterSection;
+  let scrollingTop;
   let starting = false;
 
   useEffect(() => {
     // loading
-    $('.loading').fadeOut(1000)
+    $('.loading').fadeOut(2000)
     counterSection = $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
+    Section1 = $('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
+    Section2 = $('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
+
   }, [])
 
   // --------------------------------scrolling
   window.addEventListener("scroll", function () {
-    let scrollingTop = $(this.window).scrollTop()
+    scrollingTop = $(this.window).scrollTop()
 
     // counter
     if (scrollingTop >= counterSection) {
@@ -35,41 +41,54 @@ export default function Home() {
       }
       starting = true;
     }
-
+    // section1
+    imgs(Section1, '.return-right', 'right')
+    // section2
+    imgs(Section2, '.return-left', 'left')
   })
+
+  // img
+  function imgs(scrolling, imgclass, place) {
+    if (scrollingTop >= scrolling) {
+      $(imgclass).css(place, '0px')
+    }
+    else {
+      $(imgclass).css(place, '500px')
+    }
+  }
   //counter function
   function handleCounter() {
     const counters = document.querySelectorAll('.counter-num');
 
     counters.forEach(counter => {
-        // Set the initial value of the counter to 0
-        counter.innerText = '0';
-    
-        // Function to update 
-        const updateCounter = () => {
-            // Get the target value from the 'data-target' attribute of the counter element
-            const target = +counter.getAttribute('data-target');
-    
-            // Get the current value of the counter
-            const current = +counter.innerText;
-    
-            // Calculate the increment value
-            const increment = target / 100;
-    
-            // Check if the current value is less than the target value
-            if (current < target) {
-                // Increment the counter value and update the display
-                counter.innerText = `${Math.ceil(current + increment)}`;
-                // Call the updateCounter function again after a short delay (1 millisecond)
-                setTimeout(updateCounter, 15);
-            } else {
-                // If the current value is greater than or equal to the target value, set the counter to the target value
-                counter.innerText = target;
-            }
+      // Set the initial value of the counter to 0
+      counter.innerText = '0';
+
+      // Function to update 
+      const updateCounter = () => {
+        // Get the target value from the 'data-target' attribute of the counter element
+        const target = +counter.getAttribute('data-target');
+
+        // Get the current value of the counter
+        const current = +counter.innerText;
+
+        // Calculate the increment value
+        const increment = target / 100;
+
+        // Check if the current value is less than the target value
+        if (current < target) {
+          // Increment the counter value and update the display
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          // Call the updateCounter function again after a short delay (1 millisecond)
+          setTimeout(updateCounter, 15);
+        } else {
+          // If the current value is greater than or equal to the target value, set the counter to the target value
+          counter.innerText = target;
         }
-    
-        // Call the updateCounter function to start the counter animation
-        updateCounter();
+      }
+
+      // Call the updateCounter function to start the counter animation
+      updateCounter();
     });
 
   }
@@ -114,12 +133,12 @@ export default function Home() {
 
     </div>
     {/*third-section*/}
-    <div className='third-section py-4 my-5   '>
+    <div id='sec1' className='third-section py-4 my-5 '>
       <div className="container">
         <div className="row ">
-          <div className="col-md-6 bg-info text-center d-flex align-items-center  ">
-            <div className='try1'>
-              <img src={arhi1} className='imgs-width nn' alt="arhi1" />
+          <div className="col-md-6 text-center d-flex align-items-center  ">
+            <div className='over-flow'>
+              <img src={arhi1} className='imgs-width return-right' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
@@ -151,7 +170,7 @@ export default function Home() {
 
     </div>
     {/*forth-section*/}
-    <div className='third-section py-4  my-5   '>
+    <div id='sec2' className='third-section py-4  my-5   '>
       <div className="container ">
         <div className="row">
           <div className="col-md-6 pb-4 d-flex flex-column justify-content-center">
@@ -178,8 +197,8 @@ export default function Home() {
 
           </div>
           <div className="col-md-6 text-center d-flex  align-items-center ">
-            <div>
-              <img src={arhi2} className='imgs-width' alt="arhi2" />
+            <div className='over-flow'>
+              <img src={arhi2} className='imgs-width return-left' alt="arhi2" />
             </div>
           </div>
 
@@ -233,7 +252,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-md-6 my-4 d-flex align-items-center ">
-            <div>
+            <div className='over-flow'>
               <img src={arhi3} className='w-100' alt="arhi2" />
             </div>
           </div>

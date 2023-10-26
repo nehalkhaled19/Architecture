@@ -163,9 +163,14 @@
 }
 
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
     .home-main h1 {
         font-size: 60px
+    }
+    .home-bg {
+        transform: scale(1.5, 1);
+        width: 100%;
+        height: 100vh;
     }
 }
 
@@ -176,7 +181,7 @@
     }
 
     .home-bg {
-        transform: scale(1.25, 1);
+        transform: scale(2, 1);
         width: 100%;
         height: 100vh;
     }
@@ -211,7 +216,7 @@
     }
 
     .home-bg {
-        transform: scale(2, 1);
+        transform: scale(3, 1);
         width: 100%;
         height: 100vh;
     }

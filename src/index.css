@@ -14,10 +14,19 @@ body {
     z-index: 555555;
     background-color: white;
 }
+.try1{
+overflow: hidden;
 
-.nn{
+}
+.return-right{
     position: relative;
-    right: 300px;
+    right: 500px;
+    transition: right 1.7s;
+}
+.return-left{
+    position: relative;
+    left: 500px;
+    transition: left 1.7s;
 }
 /*  Navbar */
 nav {
@@ -105,15 +114,16 @@ nav {
     background-color: #f8f8f8;
 }
 
-.img-transform {
+/* .img-transform {
     transition: all 0.5s ease 0s;
-}
+} */
 
 .over-flow {
     overflow: hidden;
+    transition: all 0.5s ease 0s;
 }
 
-.over-flow:hover .img-transform {
+.over-flow:hover {
     transform: scale(1.1);
 }
 
