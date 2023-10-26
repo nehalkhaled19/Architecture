@@ -22,6 +22,7 @@ export default function Home() {
   let starting = false;
 
   useEffect(() => {
+    $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     // loading
     $('.loading').fadeOut(5000)
     counterSection = $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
@@ -80,7 +81,7 @@ export default function Home() {
           // Increment the counter value and update the display
           counter.innerText = `${Math.ceil(current + increment)}`;
           // Call the updateCounter function again after a short delay (1 millisecond)
-          setTimeout(updateCounter, 15);
+          setTimeout(updateCounter, 5);
         } else {
           // If the current value is greater than or equal to the target value, set the counter to the target value
           counter.innerText = target;

@@ -10,5 +10,10 @@
     color: #d8b478;
     background-color: transparent;
     box-shadow: 0 0 0 0.25rem #edd5abcb;
+}
+.btn:disabled{
+    background-color: #e3be7d !important;
+    border-color: #d8b478;
+    color: white ;
 
 }
