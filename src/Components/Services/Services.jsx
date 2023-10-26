@@ -11,6 +11,9 @@ import Nav from '../Nav/Nav'
 
 
 export default function Services() {
+  let skillSection;
+  let starting = false;
+  let bars;
 
 
   // video
@@ -20,14 +23,32 @@ export default function Services() {
       $('#videoIcon').addClass("d-none");
       $('#videoo').removeClass("d-none").attr('src', 'https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1')
     })
+    // skillSection
+    skillSection = $('#skills').offset().top
+    bars = document.querySelectorAll('.progress-bar')
   }, [])
 
+  // --------------------------------scrolling
+  window.addEventListener("scroll", function () {
+    let scrollingTop = $(this.window).scrollTop()
+    if (scrollingTop >= skillSection) {
+      if (!starting) {
+        skillsBars()
+      }
+      starting = true;
+    }
+  })
 
-
+  function skillsBars() {
+    bars.forEach(el => {
+      let target = $(el).attr('target')
+      $(el).css('width', target)
+    });
+  }
 
   return <>
-  <Nav></Nav>
- 
+    <Nav></Nav>
+
     <div className='services'>
       {/* title */}
       <section className=' h-50'>
@@ -88,7 +109,7 @@ export default function Services() {
                 <p className='max-width main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
                 <div className='line'></div>
                 <p className='max-width main-p none'>
-                I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
+                  I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
               </div>
             </div>
             <div className="col-md-6 py-3">
@@ -102,7 +123,7 @@ export default function Services() {
         </div>
       </section>
       {/* section 4  design*/}
-      <section className='py-5 design '>
+      <section id='skills' className='py-5 design '>
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
@@ -117,7 +138,7 @@ export default function Services() {
                 <p className='max-width main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house and commercial builds and we are registered NHBC house builders.</p>
                 <div className='line'></div>
                 <p className='max-width main-p none'>
-                I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
+                  I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.</p>
               </div>
             </div>
 
@@ -139,47 +160,47 @@ export default function Services() {
             <div className="col-md-6 py-3">
               <div className='h-100 d-flex flex-column justify-content-center '>
                 <div>
-                <div className=" d-flex mt-4">
-                  <span >Architecture</span>
-                  <span className='ms-auto'>94%</span>
+                  <div className=" d-flex mt-4">
+                    <span >Architecture</span>
+                    <span className='ms-auto'>94%</span>
+                  </div>
+                  <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
+                    <div className="progress-bar" target='94%' style={{ backgroundColor: '#d8b478', width: '0%' }}></div>
+                  </div>
                 </div>
-                <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
-                  <div className="progress-bar" style={{ backgroundColor: '#d8b478', width: '94%' }}></div>
-                </div>
-                </div>
-               <div>
-               <div className=" d-flex mt-4">
-                  <span>Design</span>
-                  <span className='ms-auto'>86%</span>
-                </div>
-
-                <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
-                  <div className="progress-bar" style={{ backgroundColor: '#d8b478', width: '86%' }}></div>
-                </div>
-               </div>
-                
                 <div>
-                <div className=" d-flex mt-4">
-                  <span>Space Optimization</span>
-                  <span className='ms-auto'>78%</span>
+                  <div className=" d-flex mt-4">
+                    <span>Design</span>
+                    <span className='ms-auto'>86%</span>
+                  </div>
+
+                  <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
+                    <div className="progress-bar" target='86%' style={{ backgroundColor: '#d8b478', width: '0%' }}></div>
+                  </div>
                 </div>
 
-                <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
-                  <div className="progress-bar" style={{ backgroundColor: '#d8b478', width: '78%' }}></div>
-                </div>
-                </div>
-               
-               <div>
-               <div className=" d-flex mt-4">
-                  <span>Unique Furniture</span>
-                  <span className='ms-auto'>65%</span>
+                <div>
+                  <div className=" d-flex mt-4">
+                    <span>Space Optimization</span>
+                    <span className='ms-auto'>78%</span>
+                  </div>
+
+                  <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
+                    <div className="progress-bar" target='78%' style={{ backgroundColor: '#d8b478', width: '0%' }}></div>
+                  </div>
                 </div>
 
-                <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
-                  <div className="progress-bar" style={{ backgroundColor: '#d8b478', width: '72%' }}></div>
+                <div>
+                  <div className=" d-flex mt-4">
+                    <span>Unique Furniture</span>
+                    <span className='ms-auto'>65%</span>
+                  </div>
+
+                  <div className="progress my-1" role="progressbar" aria-label="Basic example" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style={{ height: "11px" }}>
+                    <div className="progress-bar" target='65%' style={{ backgroundColor: '#d8b478', width: '0%' }}></div>
+                  </div>
                 </div>
-               </div>
-               
+
 
               </div>
             </div>
@@ -192,7 +213,7 @@ export default function Services() {
               </div>
               <img id='videoImg' className='w-100 h-100 rounded-3' src={img4} alt="arch4" />
 
-              <iframe id='videoo' className='w-100 h-100 rounded-3 position-absolute top-0 d-none' src="https://www.youtube-nocookie.com/embed/MKXACbkRaNM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              <iframe id='videoo' className='w-100 h-100 rounded-3 position-absolute top-0 d-none' src="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 
 
@@ -214,12 +235,12 @@ export default function Services() {
           <span className='my-4'>Feeling convinced?</span>
           <p >Our team of expert will make your project real</p>
           <Link to={'/Architecture/contactus'}>
-          <button className='btn my-2 btn-outline-light p-3 px-4 btn-hire '>Hire Us!</button>
+            <button className='btn my-2 btn-outline-light p-3 px-4 btn-hire '>Hire Us!</button>
           </Link>
         </div>
 
       </section>
 
     </div>
-    </>
+  </>
 }

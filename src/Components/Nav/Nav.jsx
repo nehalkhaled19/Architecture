@@ -12,7 +12,6 @@ export default function Nav() {
   window.addEventListener("scroll", function () {
 
     let scrollingTop = $(this.window).scrollTop()
-    console.log(scrollingTop);
     if (scrollingTop > 30) {
       $('nav').addClass('navbarHome-bg');
       $('#logo').attr('src',logoLight)

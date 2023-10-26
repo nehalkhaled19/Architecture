@@ -136,4 +136,7 @@ nav {
 .object {
     object-fit: cover;
 }
+.progress-bar{
+  transition: all 1s;
+}
 
