@@ -14,7 +14,7 @@ export default function Layout() {
 
     // Automatically scrolls to top whenever pathname changes
     useEffect(() => {
-      window.scrollTo(0, 0);
+      $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     }, [pathname]);
   }
   ScrollToTop()

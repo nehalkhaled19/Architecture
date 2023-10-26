@@ -23,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     // loading
-    $('.loading').fadeOut(2000)
+    $('.loading').fadeOut(5000)
     counterSection = $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
     Section1 = $('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
     Section2 = $('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
@@ -300,12 +300,11 @@ export default function Home() {
     </div>
     {/* Testimonials */}
     <div className='my-5 testimonials'>
-      <div className='w-100 h-100 py-5 text-center layer  text-white'>
-
+      <div className='py-5 text-center layer  text-white'>
         <h3 className='mt-4'>Testimonials</h3>
         <p className='my-4'>What our awesome clients say about us.</p>
 
-        <div className='mt-4 container w-100 d-flex justify-content-center align-items-center'>
+        <div className='mt-4  container d-flex justify-content-center align-items-center'>
 
           <OwlCarousel className='owl-theme  my-5' loop dots items={2} responsive={{ 0: { items: 1 }, 979: { items: 2 } }}>
             <div className='item text-start mx-2'>

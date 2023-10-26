@@ -2,17 +2,13 @@
 .home-bg {
     background: transparent;
     background-position: center center;
-    height: 100vh;
 }
-
 .carousel-width {
     width: 6%;
 }
-
 .home-main {
     z-index: 666;
 }
-
 .home-main .p1 {
     font-size: 22px;
     line-height: 40px;
@@ -109,7 +105,7 @@
     background-image: url(../../images/archi-12.jpg);
     background-size: cover;
     background-position: center center;
-    height: 80%;
+    height: auto;
 
 }
 
