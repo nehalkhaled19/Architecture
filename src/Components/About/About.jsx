@@ -29,7 +29,7 @@ export default function About() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 px-3 ">
-              <div className='text-end '>
+              <div className='text-end  zoom overflow-hidden '>
                 <img src={img1} className='about-img rounded-2' alt="arch12" />
 
               </div>
@@ -55,7 +55,7 @@ export default function About() {
               </div>
             </div>
             <div className="col-md-6 py-3 px-3 ">
-              <div className='text-start'>
+              <div className='text-start zoom overflow-hidden'>
                 <img src={img2} className=' about-img rounded-2' alt="arch15" />
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function About() {
           <div className=" px-4 row">
             <div className="col-lg-4 col-md-6 my-3">
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
-              <div className='over-flow position-relative'>
+              <div className='position-relative overflow-hidden'>
               <img src={person3} alt="person1" className='w-100' />
               <div className="social d-flex align-items-center  justify-content-center">
                 <div className="d-flex align-items-center position-absolute justify-content-center">
@@ -156,7 +156,7 @@ export default function About() {
             </div>
             <div className="col-lg-4 col-md-6 my-3">
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
-              <div className='over-flow position-relative'>
+              <div className='position-relative overflow-hidden'>
               <img src={person2} alt="person2" className='w-100' />
               <div className="social d-flex align-items-center  justify-content-center">
                 <div className="d-flex align-items-center position-absolute justify-content-center">
@@ -184,7 +184,7 @@ export default function About() {
             </div>
             <div className="col-lg-4 col-md-6 my-3">
               <div className=' border border-1 item2 bg-white zoom overflow-hidden rounded-2 '>
-              <div className='over-flow position-relative'>
+              <div className='position-relative overflow-hidden'>
               <img src={person1} alt="person3" className='w-100' />
               <div className="social d-flex align-items-center  justify-content-center">
                 <div className="d-flex align-items-center position-absolute justify-content-center">

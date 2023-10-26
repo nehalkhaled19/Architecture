@@ -126,9 +126,14 @@ nav {
 .over-flow:hover {
     transform: scale(1.1);
 }
+.zoom img{
+    transition: all 0.4s ease 0s;
+  }
+ .zoom:hover img{
+    transform: scale(1.2);
+ }
 
 .object {
     object-fit: cover;
 }
 
-@media (max-width: 995px) {}

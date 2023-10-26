@@ -60,7 +60,7 @@ export default function Services() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
-              <div className='over-flow rounded-2 d-flex align-items-center h-100 d-flex align-items-center h-100'>
+              <div className='overflow-hidden zoom rounded-2 d-flex align-items-center h-100 justify-content-center'>
                 <img src={img1} className='about-img rounded-2 img-transform' alt="arch1" />
 
               </div>
@@ -92,7 +92,7 @@ export default function Services() {
               </div>
             </div>
             <div className="col-md-6 py-3">
-              <div className='over-flow rounded-2 d-flex align-items-center h-100'>
+              <div className='overflow-hidden zoom rounded-2 d-flex align-items-center h-100 justify-content-center'>
                 <img src={img2} className='about-img rounded-2 img-transform' alt="arch2" />
 
               </div>
@@ -106,7 +106,7 @@ export default function Services() {
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
-              <div className='over-flow rounded-2 d-flex align-items-center h-100'>
+              <div className='overflow-hidden zoom rounded-2 d-flex align-items-center h-100 justify-content-center'>
                 <img src={img3} className='about-img rounded-2 img-transform' alt="arch1" />
 
               </div>
@@ -210,7 +210,7 @@ export default function Services() {
       </section>
       {/* section 7 hire us*/}
       <section className='hire-us'>
-        <div className="overlayer w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white text-center">
+        <div className="overlayer w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white text-center px-2">
           <span className='my-4'>Feeling convinced?</span>
           <p >Our team of expert will make your project real</p>
           <Link to={'/Architecture/contactus'}>
