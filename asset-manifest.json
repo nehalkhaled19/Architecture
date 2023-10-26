@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Architecture/static/css/main.316ef88d.css",
-    "main.js": "/Architecture/static/js/main.95c19727.js",
+    "main.css": "/Architecture/static/css/main.72c1c12f.css",
+    "main.js": "/Architecture/static/js/main.9976b459.js",
     "static/media/home-1.jpg": "/Architecture/static/media/home-1.95a0f56123ee519eea00.jpg",
     "static/media/archi-9-x.jpg": "/Architecture/static/media/archi-9-x.3e4bb8053d83c0b01648.jpg",
     "static/media/home-3.jpg": "/Architecture/static/media/home-3.f8de7d3f988eb081fc5e.jpg",
@@ -33,11 +33,11 @@
     "static/media/fa-v4compatibility.ttf": "/Architecture/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
     "static/media/fa-v4compatibility.woff2": "/Architecture/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/Architecture/index.html",
-    "main.316ef88d.css.map": "/Architecture/static/css/main.316ef88d.css.map",
-    "main.95c19727.js.map": "/Architecture/static/js/main.95c19727.js.map"
+    "main.72c1c12f.css.map": "/Architecture/static/css/main.72c1c12f.css.map",
+    "main.9976b459.js.map": "/Architecture/static/js/main.9976b459.js.map"
   },
   "entrypoints": [
-    "static/css/main.316ef88d.css",
-    "static/js/main.95c19727.js"
+    "static/css/main.72c1c12f.css",
+    "static/js/main.9976b459.js"
   ]
 }
