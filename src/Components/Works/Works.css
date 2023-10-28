@@ -3,18 +3,20 @@
     color: #949494 !important;
     font-size: 16;
     padding: 0 10px;
+    border: 0px solid transparent ;
+    background-color: transparent !important;
 
 }
 
 .works-tabs .nav-link:hover {
-    color: #2d2c2c !important;
+    color: #2d2c2c ;
 }
 
-.works-tabs .active {
-    background-color: transparent !important;
+.active-works{
+    background-color: transparent ;
     border-radius: 0;
     color: #2d2c2c !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #2d2c2c2d ;
 }
 
 .work {
@@ -123,7 +125,8 @@
 .content {
     height: 90%;
 }
-.work-img{
+
+.work-img {
     height: 90%;
     object-fit: cover;
 }
@@ -133,27 +136,43 @@
 
 /* Large desktop */
 @media (max-width: 1200px) {
-    .content{
+    .content {
         width: 80%;
     }
-    .work-img{
+
+    .work-img {
         width: 100%;
-        /* height: 90%; */
     }
 }
+
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 995px) {
-    .content{
+    .content {
         width: 90%;
     }
-    .work-img{
+
+    .work-img {
         width: 100%;
         height: auto;
     }
+
+    .portfolio-icons {
+        bottom: 0;
+    }
+
+    .portfolio-layer h4 {
+        opacity: 1;
+        top: 0%;
+        font-size: 18px;
+    }
 }
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    .content{
+    .content {
         width: 80%;
+    }
+     .portfolio-layer h4 {
+        font-size: 18px;
     }
 }

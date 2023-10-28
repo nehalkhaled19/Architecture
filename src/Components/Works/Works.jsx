@@ -6,8 +6,9 @@ import img3 from '../../images/archi16.jpg'
 import img4 from '../../images/archi-7-700x600.jpg'
 import img5 from '../../images/home-3.jpg'
 import $ from 'jquery'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Nav from '../Nav/Nav'
+import 'animate.css';
 
 export default function Works() {
 
@@ -19,6 +20,7 @@ export default function Works() {
     getimgs()
     // to get all imgs inside the tab
     $(".nav-link").on('click', (e) => {
+     $(e).addClass('active-works')
       targetTab = e.target.getAttribute('data-bs-target')
       getimgs(targetTab)
     })
@@ -60,14 +62,20 @@ export default function Works() {
   }, [])
 
   // get img src
-  function getimgs(tab = '#goals') {
+function getimgs(tab = '#goals') {
     imgsSrc = []
     currentIndex = 0
+    $(tab).addClass('active-works')
+    $('span').not(tab).removeClass('active-works')
+
     let images = document.querySelectorAll(`${tab}Imgs`)
     let imgs = Array.from(images)
     imgs.forEach(e => {
       imgsSrc.push(e.getAttribute('src'))
     });
+    
+    $(images).siblings().addClass('d-none')
+    $(images).addClass('animate__fadeInRight').removeClass('d-none')
   }
 
 
@@ -84,32 +92,35 @@ export default function Works() {
         </div>
       </section>
       {/* nav & tabs */}
-      <div className='container pb-5 d-flex flex-column justify-content-center'>
-        <ul className="nav nav-pills mb-3 justify-content-center works-tabs" id="pills-tab" role="tablist">
-          <li className="nav-itemy" role="presentation">
-            <button className="nav-link py-0  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
-              <span data-bs-target="#goals">Show All</span>
+      <div className='container'>
+        <ul className="nav  nav-pills mb-3 justify-content-center works-tabs">
+        <li className="nav-itemy" role="presentation">
+            <button className="nav-link py-0" id="goals-tab"  data-bs-target="#goals">
+              <span id='goals' data-bs-target="#goals">Show All</span>
             </button>
           </li>
           <li className="nav-item" role="presentation">
-            <button className="nav-link py-0" id="methods-tab" data-bs-toggle="pill" data-bs-target="#methods" type="button" role="tab" aria-controls="methods" aria-selected="false">
-              <span data-bs-target="#methods">Interior Design</span>
+            <button className="nav-link py-0" id="methods-tab"  data-bs-target="#methods" >
+              <span id='methods' data-bs-target="#methods">Interior Design</span>
             </button>
           </li>
           <li className="nav-item" role="presentation">
-            <button className="nav-link py-0" id="results-tab" data-bs-toggle="pill" data-bs-target="#results" type="button" role="tab" aria-controls="results" aria-selected="false">
-              <span data-bs-target="#results">Open Space</span>
+            <button className="nav-link py-0 " id="results-tab"  data-bs-target="#results">
+              <span id='results' data-bs-target="#results">Open Space</span>
 
             </button>
           </li>
         </ul>
-        <div className="tab-content py-3" id="pills-tabContent">
-          <div className="tab-pane   active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">
-            <div className='container'>
+        </div>
+
+        <div className="container pb-5">
+        <div className="tab-content my-3 " >
+          <div id='goalsImgs' className='animate__animated'>
+            <div className="container">
               <div className="row g-4">
-                <div className="col-lg-4 col-md-6">
+              <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img1} className='w-100 h-100 object ' alt="Minimal Interior" />
+                    <img  src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -129,9 +140,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img2} className='w-100 h-100 object ' alt="Holyday Residence" />
+                    <img  src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -151,9 +162,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img3} className='w-100 h-100 object ' alt="Co-working Design" />
+                    <img  src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -173,9 +184,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img4} className='w-100 h-100 object ' alt="Concrete House on Lake" />
+                    <img  src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Concrete House on Lake
                       </h4>
@@ -196,9 +207,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='goalsImgs' src={img5} className='w-100 h-100 object ' alt="Interior Design" />
+                    <img  src={img5} className=' w-100 h-100 object ' alt="Interior Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Interior Design
                       </h4>
@@ -221,14 +232,13 @@ export default function Works() {
                 </div>
               </div>
             </div>
-
           </div>
-          <div className="tab-pane  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabIndex="0">
-            <div className="container ">
+          <div id='methodsImgs' className='animate__animated' >
+            <div className="container">
               <div className="row g-4">
-                <div className="col-lg-4 col-md-6">
+              <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='methodsImgs' src={img1} className='w-100 h-100 object ' alt="Minimal Interior" />
+                    <img  src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -248,9 +258,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='methodsImgs' src={img5} className='w-100 h-100 object ' alt="Interior Design" />
+                    <img  src={img5} className='  w-100 h-100 object ' alt="Interior Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Interior Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -272,15 +282,15 @@ export default function Works() {
                 </div>
               </div>
             </div>
-
-          </div>
-          <div className="tab-pane  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabIndex="0">
-            <div className="container">
+          </div >
+          <div id='resultsImgs' className='animate__animated'>
+            <div className='container'>
               <div className="row g-4">
-
-                <div className="col-lg-4 col-md-6">
+       
+              
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='resultsImgs' src={img2} className='w-100 h-100 object ' alt="Holyday Residence" />
+                    <img  src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -300,9 +310,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='resultsImgs' src={img3} className='w-100 h-100 object ' alt="Co-working Design" />
+                    <img src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -322,9 +332,9 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div  className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img id='resultsImgs' src={img4} className='w-100 h-100 object ' alt="Concrete House on Lake" />
+                    <img  src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Concrete House on Lake</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -344,12 +354,12 @@ export default function Works() {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
+     
 
           </div>
-        </div>
+       </div>
+       </div>
+       </div>
       </div>
 
       {/* modal */}
@@ -359,7 +369,7 @@ export default function Works() {
             <div className='text-end mt-2 w-100'>
               <i className="fa-solid fa-xmark i-close my-3 fa-xl cursor-pointer " ></i>
             </div>
-            <img src='' className='work-img object' alt="work-modal" />
+            <img src='' className='work-img object d-block' alt="work-modal" />
           </div>
           <i className="fa-solid cursor-pointer fa-chevron-right fa-2xl arrow-right "></i>
           <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
