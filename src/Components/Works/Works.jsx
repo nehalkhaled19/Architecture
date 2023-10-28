@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './Works.css'
-import img1 from '../../images/archi-8-700x640.jpg'
-import img2 from '../../images/archi-9-600x600.jpg'
+import img1 from '../../images/archi-3.jpg'
+import img2 from '../../images/archi-9-x.jpg'
 import img3 from '../../images/archi16.jpg'
 import img4 from '../../images/archi-7-700x600.jpg'
-import img5 from '../../images/archi-4-700x640.jpg'
+import img5 from '../../images/home-3.jpg'
 import $ from 'jquery'
 import { Link } from 'react-router-dom'
 import Nav from '../Nav/Nav'
@@ -20,23 +20,19 @@ export default function Works() {
     // to get all imgs inside the tab
     $(".nav-link").on('click', (e) => {
       targetTab = e.target.getAttribute('data-bs-target')
-    
-
       getimgs(targetTab)
     })
+
     // open modal
     $(".openModal").on('click', (e) => {
-      $("#modal").fadeIn(500).addClass('d-flex').removeClass('d-none')
+      $("#modal").fadeIn(100)
       src = e.target.getAttribute('imgsrc')
-      $('.content').attr('src', src)
+      $('.work-img').attr('src', src)
       currentIndex = imgsSrc.indexOf(src)
-      console.log(currentIndex);
     })
     // close modal
     document.querySelector(".i-close").addEventListener('click', () => {
-      $("#modal").fadeOut(500, function () {
-        $("#modal").removeClass('d-flex').addClass('d-none')
-      })
+      $("#modal").fadeOut(500)
     })
     // next img
     $(".arrow-right").on('click', (e) => {
@@ -47,7 +43,7 @@ export default function Works() {
         currentIndex = 0
       }
       src = imgsSrc[currentIndex]
-      $('.content').attr('src', src)
+      $('.work-img').attr('src', src)
     })
     // prev img
     $(".arrow-left").on('click', () => {
@@ -58,7 +54,7 @@ export default function Works() {
         currentIndex = imgsSrc.length - 1
       }
       src = imgsSrc[currentIndex]
-      $('.content').attr('src', src)
+      $('.work-img').attr('src', src)
     })
 
   }, [])
@@ -76,7 +72,7 @@ export default function Works() {
 
 
   return <>
-  <Nav></Nav>
+    <Nav></Nav>
     <div className='position-relative'>
       {/* title */}
       <section className=' h-50'>
@@ -90,7 +86,7 @@ export default function Works() {
       {/* nav & tabs */}
       <div className='container pb-5 d-flex flex-column justify-content-center'>
         <ul className="nav nav-pills mb-3 justify-content-center works-tabs" id="pills-tab" role="tablist">
-        <li className="nav-itemy" role="presentation">
+          <li className="nav-itemy" role="presentation">
             <button className="nav-link py-0  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
               <span data-bs-target="#goals">Show All</span>
             </button>
@@ -108,8 +104,8 @@ export default function Works() {
           </li>
         </ul>
         <div className="tab-content py-3" id="pills-tabContent">
-          <div className="tab-pane   active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">     
-                 <div className='container'>
+          <div className="tab-pane   active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">
+            <div className='container'>
               <div className="row g-4">
                 <div className="col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
@@ -117,11 +113,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img1}
                         >
@@ -139,11 +135,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/holyday-residence'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/holyday-residence'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img2}
                         >
@@ -161,11 +157,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/co-working-design'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/co-working-design'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img3}
                         >
@@ -184,11 +180,11 @@ export default function Works() {
                       <h4>Concrete House on Lake
                       </h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/concrete-house-on-lake'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/concrete-house-on-lake'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img4}
                         >
@@ -208,10 +204,10 @@ export default function Works() {
                       </h4>
                       <div className="portfolio-icons justify-content-center d-flex">
                         <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/interior-design'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                          <Link to={'../project/interior-design'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img5}
                         >
@@ -236,11 +232,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img1}
                         >
@@ -258,11 +254,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Interior Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/interior-design'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/interior-design'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img5}
                         >
@@ -288,11 +284,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/holyday-residence'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/holyday-residence'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img2}
                         >
@@ -310,11 +306,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                      <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/co-working-design'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/co-working-design'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img3}
                         >
@@ -332,11 +328,11 @@ export default function Works() {
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Concrete House on Lake</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
-                         <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
-                         <Link to={'../project/concrete-house-on-lake'}>
-                         <i className="fa fa-chain-broken " style={{color:'#333'}}></i>
+                        <div className="p-icon me-2 d-flex justify-content-center  rounded-circle align-items-center">
+                          <Link to={'../project/concrete-house-on-lake'}>
+                            <i className="fa fa-chain-broken " style={{ color: '#333' }}></i>
 
-                         </Link>
+                          </Link>
                         </div>
                         <div className="openModal p-icon d-flex justify-content-center rounded-circle align-items-center" imgsrc={img4}
                         >
@@ -357,18 +353,19 @@ export default function Works() {
       </div>
 
       {/* modal */}
-      <div id='modal' className=' works-modal d-none '>
-        <div className='w-50 content'>
-          <div className='text-end mt-2'>
-            <i className="fa-solid fa-xmark i-close my-3 fa-xl cursor-pointer " ></i>
+      <div id='modal' className=' works-modal '>
+        <div className='model-container'>
+          <div className='content d-flex justify-content-center flex-column align-items-center'>
+            <div className='text-end mt-2 w-100'>
+              <i className="fa-solid fa-xmark i-close my-3 fa-xl cursor-pointer " ></i>
+            </div>
+            <img src='' className='work-img object' alt="work-modal" />
           </div>
-          <img src='' className='w-100 content object' alt="work-modal" />
+          <i className="fa-solid cursor-pointer fa-chevron-right fa-2xl arrow-right "></i>
+          <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
         </div>
-        <i className="fa-solid cursor-pointer fa-chevron-right fa-2xl arrow-right "></i>
-        <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
       </div>
 
-   
     </div>
-    </>
+  </>
 }

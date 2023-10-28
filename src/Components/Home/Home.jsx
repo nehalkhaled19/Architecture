@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
 import img1 from '../../images/home-1.jpg'
 import img2 from '../../images/home-2.jpg'
@@ -13,28 +13,30 @@ import { Link } from 'react-router-dom';
 import NavHome from '../NavHome/NavHome';
 import $ from 'jquery'
 
+
 export default function Home() {
 
-  let Section1;
-  let Section2;
-  let counterSection;
+  let [Section1, setSection1] = useState(0)
+  let [Section2, setSection2] = useState(0)
+  let [counterSection, setCounterSection] = useState(0)
   let scrollingTop;
   let starting = false;
 
   useEffect(() => {
     $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     // loading
-    $('.loading').fadeOut(5000)
-    counterSection = $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
-    Section1 = $('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
-    Section2 = $('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true)
+    $('.loading').fadeOut(3000)
+    setCounterSection( $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
+    setSection1($('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
+    setSection2($('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
 
   }, [])
 
   // --------------------------------scrolling
   window.addEventListener("scroll", function () {
     scrollingTop = $(this.window).scrollTop()
-
+    console.log(scrollingTop);
+    console.log(counterSection);
     // counter
     if (scrollingTop >= counterSection) {
       if (!starting) {
