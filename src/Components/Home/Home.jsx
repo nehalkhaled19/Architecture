@@ -28,15 +28,17 @@ export default function Home() {
     $('.loading').fadeOut(3000)
     setCounterSection( $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
     setSection1($('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
-    setSection2($('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
+    setSection2($('#sec2').offset().top)
 
   }, [])
 
   // --------------------------------scrolling
   window.addEventListener("scroll", function () {
     scrollingTop = $(this.window).scrollTop()
-    console.log(scrollingTop);
-    console.log(counterSection);
+    console.log(Section2);
+    console.log(Section1);
+  console.log(scrollingTop);
+    // console.log(counterSection);
     // counter
     if (scrollingTop >= counterSection) {
       if (!starting) {
@@ -102,20 +104,20 @@ export default function Home() {
     </div>
     <NavHome></NavHome>
     {/* carousel */}
-    <div id="carouselExampleSlidesOnly" className="carousel slide position-relative" data-bs-ride="carousel">
-      <div className="carousel-inner ">
+    <div id="carouselExampleSlidesOnly" className="carousel slide " data-bs-ride="carousel">
+      <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={img3} className="d-block home-bg w-100" alt="home1" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item ">
           <img src={img2} className="d-block home-bg w-100" alt="home2" />
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item ">
           <img src={img1} className="d-block home-bg w-100" alt="home3" />
         </div>
       </div>
       {/* body*/}
-      <div className="home-main  container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0">
+      <div className="home-main container d-flex flex-column text-center text-white justify-content-center align-items-center position-absolute top-0 bottom-0 end-0 start-0">
         <p className='p1'>Architect house</p>
         <h1>Creativity & Contemporary</h1>
         <p className='p2'>Whatever good things we build end up building us.</p>
@@ -199,7 +201,7 @@ export default function Home() {
             </div>
 
           </div>
-          <div className="col-md-6 text-center d-flex  align-items-center ">
+          <div id='sec2' className="col-md-6 text-center d-flex  align-items-center ">
             <div className='over-flow'>
               <img src={arhi2} className='imgs-width return-left' alt="arhi2" />
             </div>

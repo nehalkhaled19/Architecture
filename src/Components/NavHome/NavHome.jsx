@@ -31,7 +31,7 @@ export default function NavHome() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto ">
             <li className="nav-item mx-2">
-              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2  '} to={''}>Home</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2  '} to={''}> Home </NavLink>
             </li>
             <li className="nav-item mx-2">
               <NavLink className={({ isActive }) => isActive ? "nav-link ligh-nav activeLink px-2" : 'nav-link ligh-nav px-2 '} to={'about'}>About</NavLink>

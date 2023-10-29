@@ -3,9 +3,11 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
 }
-:root{
+
+:root {
     --dark-color: #262626;
 }
+
 /* loading */
 .loading {
     display: flex;
@@ -14,20 +16,24 @@ body {
     z-index: 555555;
     background-color: white;
 }
-.try1{
-overflow: hidden;
+
+.try1 {
+    overflow: hidden;
 
 }
-.return-right{
+
+.return-right {
     position: relative;
     right: 500px;
     transition: right 1.7s;
 }
-.return-left{
+
+.return-left {
     position: relative;
     left: 500px;
     transition: left 1.7s;
 }
+
 /*  Navbar */
 nav {
     padding: 15px 0;
@@ -35,7 +41,7 @@ nav {
 }
 
 .nav-link {
-    color: white ;
+    color: white;
     font-size: 17px;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -43,35 +49,43 @@ nav {
     padding: 5px 0;
     margin: 5px 0;
 }
+
 .activeLink {
     border: 2px solid;
     font-weight: 500;
 }
+
 /* light nav */
 .ligh-nav:hover {
-    color: white ;
+    color: white;
     border: 2px solid;
     border-radius: 10px;
 }
+
 .navbar-brand img {
     width: 50%;
     margin-bottom: 5px;
 }
+
 .ligh-nav:focus .ligh-nav.active {
-    color: white ;
+    color: white;
 }
+
 /* dark nav */
-.dark-nav{
+.dark-nav {
     color: var(--dark-color);
 }
+
 .dark-nav:focus .dark-nav.active {
     color: var(--dark-color);
 }
+
 .dark-nav:hover {
     border: 2px solid var(--dark-color);
     border-radius: 10px;
     color: var(--dark-color) !important;
 }
+
 .navbarHome-bg {
     background-color: #312e29 !important;
     padding: 10px 0 !important;
@@ -122,17 +136,25 @@ nav {
 .over-flow:hover {
     transform: scale(1.1);
 }
-.zoom img{
+
+.zoom img {
     transition: all 0.4s ease 0s;
-  }
- .zoom:hover img{
+}
+
+.zoom:hover img {
     transform: scale(1.2);
- }
+}
 
 .object {
     object-fit: cover;
 }
-.progress-bar{
-  transition: all 1s;
+
+.progress-bar {
+    transition: all 1s;
 }
 
+@media (max-width:480px) {
+    .navbar-brand{
+        width: 60%;
+    }
+}
