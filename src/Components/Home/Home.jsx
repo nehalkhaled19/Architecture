@@ -28,8 +28,8 @@ export default function Home() {
     $('.loading').fadeOut(3000)
     setCounterSection( $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
     setSection1($('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
-    setSection2($('#sec2').offset().top)
-
+    setSection2($('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
+console.log($('#carouselExampleSlidesOnly').outerHeight(true));
   }, [])
 
   // --------------------------------scrolling
@@ -85,7 +85,7 @@ export default function Home() {
           // Increment the counter value and update the display
           counter.innerText = `${Math.ceil(current + increment)}`;
           // Call the updateCounter function again after a short delay (1 millisecond)
-          setTimeout(updateCounter, 5);
+          setTimeout(updateCounter, 20);
         } else {
           // If the current value is greater than or equal to the target value, set the counter to the target value
           counter.innerText = target;
@@ -175,7 +175,7 @@ export default function Home() {
 
     </div>
     {/*forth-section*/}
-    <div id='sec2' className='third-section py-4  my-5   '>
+    <div className='third-section py-4  my-5   '>
       <div className="container ">
         <div className="row">
           <div className="col-md-6 pb-4 d-flex flex-column justify-content-center">
@@ -218,15 +218,15 @@ export default function Home() {
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-regular fa-2xl fa-thumbs-up"></i>
-              <p className='counter-num my-3' data-target="1400"></p>
+              <p className='counter-num my-3' data-target="1200"></p>
               <p className='counter-title'>Page Likes</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">
             <div className='text-white text-center'>
               <i className=" fa-solid fa-lg fa-shop"></i>
-              <p className='counter-num my-3' data-target="64"></p>
-              <p className='counter-title'>Locations</p>
+              <p className='counter-num my-3' data-target="790"></p>
+              <p className='counter-title'>Clients</p>
             </div>
           </div>
           <div className=" my-5 col-lg-3 col-md-6 ">

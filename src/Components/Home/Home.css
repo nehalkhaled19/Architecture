@@ -1,4 +1,10 @@
 /* home */
+.home-bg {
+    /* transform: scale(2, 1); */
+    height: 800px;
+    background-position: center center;
+
+}
 
 .carousel-width {
     width: 6%;
@@ -225,12 +231,6 @@
         padding: 0px 15px !important;
     }
 
-    .home-bg {
-        /* transform: scale(3, 1); */
-        /* height: 00px; */
-
-    }
-    
     .home-main {
         transform: scale(0.7,0.7);
     }
