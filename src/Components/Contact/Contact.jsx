@@ -8,7 +8,7 @@ export default function Contact() {
 
   //  validation
   let validationSchema = Yup.object({
-    name: Yup.string().required('Name is required').matches(/^[a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?$/, "Enter valid name"),
+    name: Yup.string().required('Name is required').matches(/^[a-zA-Z]{3,15}[ ]?[a-zA-Z]*$/, "Enter valid name"),
     email: Yup.string().required('Email is required').email('Enter valid email'),
     phone: Yup.string().required("Phone is required").matches(/^01[1250][0-9]{8}$/, "Enter valid phone")
   })
@@ -22,7 +22,7 @@ export default function Contact() {
     validationSchema,
 
   })
-  // console.log(forms.handleChange);
+
   return (
     <>
       <Nav></Nav>
@@ -38,7 +38,7 @@ export default function Contact() {
       </section>
       {/* body */}
       <section>
-        <div className="container">
+        <div   className="container">
           <div className="row py-5">
             <div className="col-lg-7 About-Project ">
               <h4 >Contact Form
@@ -47,16 +47,16 @@ export default function Contact() {
                 <div className='row justify-content-between'>
                   <div className="col-lg-6 mb-4">
                     <input onBlur={forms.handleBlur} onKeyUp={forms.handleChange} type="text" placeholder='Name' className='form-control py-3' name="name" id="name" />
-                    {forms.touched.name ? <p class="mt-2 text-danger">{forms.errors.name}</p> : ""}
+                    {forms.touched.name? <p className="mt-2 text-danger">{forms.errors.name}</p> : ""}
                   </div>
                   <div className="col-lg-6 mb-4">
                   <input onBlur={forms.handleBlur} onKeyUp={forms.handleChange} type="tel" placeholder='Phone' className='form-control py-3' name="phone" id="phone" />
-                    {forms.touched.phone ? <p class="mt-2 text-danger">{forms.errors.phone}</p> : ""}
+                    {forms.touched.phone? <p className="mt-2 text-danger">{forms.errors.phone}</p> : ""}
                   </div>
                 </div>
                 <div className='mb-4'>
                 <input onBlur={forms.handleBlur} onKeyUp={forms.handleChange} type="email" placeholder='Email' className='form-control py-3' name="email" id="email" />
-                    {forms.touched.email ? <p class="mt-2 text-danger">{forms.errors.email}</p> : ""}
+                    {forms.touched.email? <p className="mt-2 text-danger">{forms.errors.email}</p> : ""}
                 </div>
                 <div className='mb-4' >
                   <textarea className="form-control py-3" placeholder='Message' id="exampleFormControlTextarea1" rows="6"></textarea>
