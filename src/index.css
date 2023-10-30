@@ -164,7 +164,7 @@ nav {
     .navbar-brand{
         width: 60%;
     }
-    /* .page-header{
-        height: 40% !important;
-    } */
+    .page-header{
+        height: 50% !important;
+    } 
 }
