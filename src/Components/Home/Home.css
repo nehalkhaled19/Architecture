@@ -183,11 +183,6 @@
     nav .container {
         padding: 0px 10px !important;
     }
-    
-    /* .home-main {
-        transform: scale(0.8,0.8);
-    } */
-
     .home-bg {
         transform: scale(2, 1);
         height: 700px;
@@ -224,7 +219,18 @@
 
 }
 
+/* i- */
+@media (max-height: 995px) {
+    nav .container {
+        padding: 0px 10px !important;
+    }
+    .home-bg {
+        transform: scale(2, 1);
+        height: 900px;
+        background-position: center center;
 
+    }
+}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     nav .container {

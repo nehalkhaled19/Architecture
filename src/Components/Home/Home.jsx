@@ -52,9 +52,6 @@ export default function Home() {
     if (scrollingTop >= scrolling) {
       $(imgclass).css(place, '0px')
     }
-    else {
-      $(imgclass).css(place, '500px')
-    }
   }
   //counter function
   function handleCounter() {
