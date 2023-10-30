@@ -24,8 +24,8 @@ export default function Layout() {
 
   return (
     <div>
-  
-      <Outlet />
+
+      <Outlet/>
       <Footer></Footer>
     </div>
   )

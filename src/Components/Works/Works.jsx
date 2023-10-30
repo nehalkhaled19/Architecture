@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import './Works.css'
 import img1 from '../../images/archi-3.jpg'
 import img2 from '../../images/archi-9-x.jpg'
@@ -10,8 +10,8 @@ import { Link, NavLink } from 'react-router-dom'
 import Nav from '../Nav/Nav'
 import 'animate.css';
 
-export default function Works() {
 
+export default function Works() {
   let imgsSrc = []
   let targetTab = ''
   let currentIndex = 0
@@ -20,7 +20,7 @@ export default function Works() {
     getimgs()
     // to get all imgs inside the tab
     $(".nav-link").on('click', (e) => {
-     $(e).addClass('active-works')
+      $(e).addClass('active-works')
       targetTab = e.target.getAttribute('data-bs-target')
       getimgs(targetTab)
     })
@@ -39,8 +39,6 @@ export default function Works() {
     // next img
     $(".arrow-right").on('click', (e) => {
       currentIndex++
-      console.log(currentIndex);
-
       if (currentIndex == imgsSrc.length) {
         currentIndex = 0
       }
@@ -50,8 +48,6 @@ export default function Works() {
     // prev img
     $(".arrow-left").on('click', () => {
       currentIndex--
-      console.log(currentIndex);
-
       if (currentIndex < 0) {
         currentIndex = imgsSrc.length - 1
       }
@@ -62,7 +58,7 @@ export default function Works() {
   }, [])
 
   // get img src
-function getimgs(tab = '#goals') {
+  function getimgs(tab = '#goals') {
     imgsSrc = []
     currentIndex = 0
     $(tab).addClass('active-works')
@@ -73,10 +69,11 @@ function getimgs(tab = '#goals') {
     imgs.forEach(e => {
       imgsSrc.push(e.getAttribute('src'))
     });
-    
-    $(images).siblings().addClass('d-none')
-    $(images).addClass('animate__fadeInRight').removeClass('d-none')
+
+    $(`${tab}Container`).siblings().addClass('d-none')
+    $(`${tab}Container`).addClass('animate__fadeInDown').removeClass('d-none')
   }
+
 
 
   return <>
@@ -92,35 +89,33 @@ function getimgs(tab = '#goals') {
         </div>
       </section>
       {/* nav & tabs */}
-      <div className='container'>
+
+      <div className='container pb-5'>
         <ul className="nav  nav-pills mb-3 justify-content-center works-tabs">
-        <li className="nav-itemy" role="presentation">
-            <button className="nav-link py-0" id="goals-tab"  data-bs-target="#goals">
+          <li className="nav-itemy" role="presentation">
+            <button className="nav-link py-0" id="goals-tab" data-bs-target="#goals">
               <span id='goals' data-bs-target="#goals">Show All</span>
             </button>
           </li>
           <li className="nav-item" role="presentation">
-            <button className="nav-link py-0" id="methods-tab"  data-bs-target="#methods" >
+            <button className="nav-link py-0" id="methods-tab" data-bs-target="#methods" >
               <span id='methods' data-bs-target="#methods">Interior Design</span>
             </button>
           </li>
           <li className="nav-item" role="presentation">
-            <button className="nav-link py-0 " id="results-tab"  data-bs-target="#results">
+            <button className="nav-link py-0 " id="results-tab" data-bs-target="#results">
               <span id='results' data-bs-target="#results">Open Space</span>
 
             </button>
           </li>
         </ul>
-        </div>
-
-        <div className="container pb-5">
-        <div className="tab-content my-3 " >
-          <div id='goalsImgs' className='animate__animated'>
+        <div className="tab-content my-3 overflow-hidden " >
+          <div id='goalsContainer' className='animate__animated'>
             <div className="container">
               <div className="row g-4">
-              <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
+                    <img id='goalsImgs' src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -140,9 +135,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
+                    <img id='goalsImgs' src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -162,9 +157,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
+                    <img id='goalsImgs' src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -184,9 +179,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
+                    <img id='goalsImgs' src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Concrete House on Lake
                       </h4>
@@ -207,9 +202,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img5} className=' w-100 h-100 object ' alt="Interior Design" />
+                    <img id='goalsImgs' src={img5} className=' w-100 h-100 object ' alt="Interior Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Interior Design
                       </h4>
@@ -233,12 +228,12 @@ function getimgs(tab = '#goals') {
               </div>
             </div>
           </div>
-          <div id='methodsImgs' className='animate__animated' >
+          <div id='methodsContainer' className='animate__animated' >
             <div className="container">
               <div className="row g-4">
-              <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
+                    <img id='methodsImgs' src={img1} className=' w-100 h-100 object ' alt="Minimal Interior" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Minimal Interior</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -258,9 +253,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img5} className='  w-100 h-100 object ' alt="Interior Design" />
+                    <img id='methodsImgs' src={img5} className='  w-100 h-100 object ' alt="Interior Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Interior Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -283,14 +278,14 @@ function getimgs(tab = '#goals') {
               </div>
             </div>
           </div >
-          <div id='resultsImgs' className='animate__animated'>
+          <div id='resultsContainer' className='animate__animated'>
             <div className='container'>
               <div className="row g-4">
-       
-              
-                <div  className=" col-lg-4 col-md-6">
+
+
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
+                    <img id='resultsImgs' src={img2} className=' w-100 h-100 object ' alt="Holyday Residence" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Holyday Residence</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -310,9 +305,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
+                    <img id='resultsImgs' src={img3} className=' w-100 h-100 object ' alt="Co-working Design" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Co-working Design</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -332,9 +327,9 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-                <div  className=" col-lg-4 col-md-6">
+                <div className=" col-lg-4 col-md-6">
                   <div className='work position-relative  cursor-pointer'>
-                    <img  src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
+                    <img id='resultsImgs' src={img4} className=' w-100 h-100 object ' alt="Concrete House on Lake" />
                     <div className='portfolio-layer d-flex flex-column justify-content-center align-items-center'>
                       <h4>Concrete House on Lake</h4>
                       <div className="portfolio-icons justify-content-center d-flex">
@@ -354,12 +349,12 @@ function getimgs(tab = '#goals') {
                     </div>
                   </div>
                 </div>
-     
 
+
+              </div>
+            </div>
           </div>
-       </div>
-       </div>
-       </div>
+        </div>
       </div>
 
       {/* modal */}
@@ -375,7 +370,6 @@ function getimgs(tab = '#goals') {
           <i className="fa-solid fa-chevron-left fa-2xl cursor-pointer arrow-left "></i>
         </div>
       </div>
-
     </div>
   </>
 }

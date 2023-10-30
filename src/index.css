@@ -25,13 +25,13 @@ body {
 .return-right {
     position: relative;
     right: 500px;
-    transition: right 2s;
+    transition: right 1.7s;
 }
 
 .return-left {
     position: relative;
     left: 500px;
-    transition: left 2s;
+    transition: left 1.7s;
 }
 
 /*  Navbar */

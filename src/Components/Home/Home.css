@@ -260,18 +260,15 @@
     }
 
 }
-/* @media (max-width: 600px){
-    
-    .home-main {
-        transform: scale(0.6,0.6);
-    }
-} */
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
     nav .container {
         padding: 0px 10px !important;
     }
-
+    .home-main {
+        transform: scale(0.9,0.9);
+    }
     nav .nav-brand img {
         width: 100%;
     }

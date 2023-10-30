@@ -29,16 +29,11 @@ export default function Home() {
     setCounterSection( $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
     setSection1($('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
     setSection2($('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
-console.log($('#carouselExampleSlidesOnly').outerHeight(true));
   }, [])
 
   // --------------------------------scrolling
   window.addEventListener("scroll", function () {
     scrollingTop = $(this.window).scrollTop()
-    console.log(Section2);
-    console.log(Section1);
-  console.log(scrollingTop);
-    // console.log(counterSection);
     // counter
     if (scrollingTop >= counterSection) {
       if (!starting) {

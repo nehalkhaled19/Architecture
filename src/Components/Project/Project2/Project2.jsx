@@ -9,7 +9,7 @@ export default function Project2() {
   return (
     <div>
          {/* title */}
-         <section className=' h-50'>
+         <section className=' h-50 '>
         <div className="conatiner py-5 about-title">
           <div className='about-text-color h-100 d-flex flex-column justify-content-center text-center' >
             <h1 className='main-font-weight my-3'>Holyday Residence</h1>
@@ -26,7 +26,7 @@ export default function Project2() {
         </div>
       </section>
       {/* body */}
-      <div className="container text-center py-4">
+      <div className="container text-center my-4">
       <img src={img1} className='w-100' alt="project2" />
       <div className="row py-5 text-start ">
         <div className="col-lg-7 ">
@@ -85,8 +85,8 @@ export default function Project2() {
       {/* project footer */}
       <section className='project-footer py-4' >
         <div className="container">
-          <div className='d-flex'>
-          <Link to={'..'} className='d-flex w-50 align-items-center text-decoration-none'>
+          <div className='d-flex align-items-center'>
+          <Link to={'..'} className='d-flex w-50 align-items-center h-100 text-decoration-none'>
           <div className='me-md-4 me-2' >
                 <i className="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
               </div>
@@ -96,7 +96,7 @@ export default function Project2() {
               </div>
              
             </Link>
-            <Link to={'../co-working-design'} className='w-50 d-inline justify-content-end d-flex align-items-center text-decoration-none'>
+            <Link to={'../co-working-design'} className='w-50 d-inline h-100 justify-content-end d-flex align-items-center text-decoration-none'>
               <div className='mx-md-4 mx-2 text-end'>
                 <span>Next Project</span>
                 <p>Co-working Design</p>

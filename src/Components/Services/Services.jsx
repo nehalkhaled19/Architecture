@@ -31,6 +31,7 @@ export default function Services() {
   // --------------------------------scrolling
   window.addEventListener("scroll", function () {
     let scrollingTop = $(this.window).scrollTop()
+    console.log(scrollingTop);
     if (scrollingTop >= skillSection) {
       if (!starting) {
         skillsBars()
@@ -123,7 +124,7 @@ export default function Services() {
         </div>
       </section>
       {/* section 4  design*/}
-      <section id='skills' className='py-5 design '>
+      <section  id='skills' className='py-5 design '>
         <div className="container ">
           <div className="row ">
             <div className="col-md-6 py-3 ">
@@ -146,7 +147,7 @@ export default function Services() {
         </div>
       </section>
       {/* skills */}
-      <section className='py-5 main-bg-color'>
+      <section className='my-5 main-bg-color'>
         <div className="container">
           <div className="row">
             <div className="col-md-6 py-3">

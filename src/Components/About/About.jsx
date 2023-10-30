@@ -84,10 +84,10 @@ export default function About() {
           <h3 className='my-4'>Our Methods</h3>
           <p className='text-muted'>Learn more about us.</p>
         </div>
-        <div className='container'>
+        <div className='container  '>
           <div >
 
-            <ul className="nav nav-pills mb-3 justify-content-center tabs" id="pills-tab" role="tablist">
+            <ul className="nav nav-pills justify-content-center tabs" id="pills-tab" role="tablist">
               <li className="nav-itemy" role="presentation">
                 <button className="nav-link  active" id="goals-tab" data-bs-toggle="pill" data-bs-target="#goals" type="button" role="tab" aria-controls="goals" aria-selected="true">
                   <span>OUR GOAL</span>
@@ -106,7 +106,7 @@ export default function About() {
               </li>
             </ul>
             <div className="tab-content py-3" id="pills-tabContent">
-              <div className="tab-pane   fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabindex="0">
+              <div className="tab-pane   fade show active" id="goals" role="tabpanel" aria-labelledby="goals-tab" tabIndex="0">
                 <div className="row">
                   <div className="col-md-6 tabs-text-color">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Nulla sollicitudin lorem quis
@@ -116,10 +116,10 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabindex="0">
+              <div className="tab-pane fade  tabs-text-color" id="methods" role="tabpanel" aria-labelledby="methods-tab" tabIndex="0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Phasellus mattis efficitur sollicitudin. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Proin nec dui congue neque cursus ullamcorper. Sed ipsum risus, ultrices a posuere ac, molestie sed tortor. Aenean gravida enim velit, ut auctor eros porttitor in. Phasellus consectetur a est dictum aliquet. Nulla et neque efficitur, auctor purus vel, ornare tellus. Aenean non tellus elementum purus feugiat ullamcorper a ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam fermentum tristique ante.
               </div>
-              <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabindex="0">
+              <div className="tab-pane fade  tabs-text-color" id="results" role="tabpanel" aria-labelledby="results-tab" tabIndex="0">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices nisl diam, vitae consequat massa lacinia consequat. Nullam cursus risus a sem pretium lacinia. Etiam facilisis laoreet justo. Morbi mattis, turpis quis volutpat fermentum, lacus ante sagittis eros, vitae imperdiet leo felis ut ligula. Nulla sollicitudin lorem quis tempor mattis. Maecenas tincidunt nibh a velit dapibus gravida. Phasellus mattis efficitur sollicitudin. Aliquam nisi enim, viverra eu nulla sed, fermentum volutpat dui. Proin nec dui congue neque cursus ullamcorper. Sed ipsum risus, ultrices a posuere ac, molestie sed tortor. Aenean gravida enim velit, ut auctor eros porttitor in. Phasellus consectetur a est dictum aliquet. Nulla et neque efficitur, auctor purus vel, ornare tellus. Aenean non tellus elementum purus feugiat ullamcorper a ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam fermentum tristique ante.
               </div>
             </div>

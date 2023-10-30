@@ -26,7 +26,7 @@ export default function Project4() {
         </div>
       </section>
         {/* body */}
-        <div className="container">
+        <div className="container  my-4">
         <div className="row">
           <div className="col-lg-8 d-flex flex-column align-items-center py-5">
             <img src={img1} className='imgs-project3' alt="project img" />
@@ -96,7 +96,7 @@ export default function Project4() {
           <div className='d-flex'>
           <Link to={'../co-working-design'} className='d-flex w-50 align-items-center text-decoration-none'>
           <div className='me-md-4 me-2' >
-                <i className="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
+                <i class="fa-solid fa-angle-left" style={{ color: "#000000b3" }}></i>
               </div>
               <div >
                 <span>Previuos Project</span>
@@ -110,7 +110,7 @@ export default function Project4() {
                 <p>Interior Design</p>
               </div>
               <div >
-                <i className="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
+                <i class="fa-solid fa-angle-right" style={{ color: "#000000b3" }}></i>
               </div>
             </Link>
 

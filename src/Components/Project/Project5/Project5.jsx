@@ -32,7 +32,7 @@ export default function Project5() {
         </div>
       </section>
       {/* body */}
-      <div className="container pb-4 ">
+      <div className="container my-4 ">
         <div className="row">
           <div className="col-lg-8 py-4">
 

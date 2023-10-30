@@ -114,32 +114,16 @@
     -webkit-transform: rotateY(0deg) scale(1, 1);
     transform: rotateY(0deg) scale(1, 1);
 }
-/* Portrait tablet to landscape and desktop */
-@media (max-width: 1200px) {
-    .tabs {
-       height: 35%;
-    }
-}
+
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 995px) {
     .about-img {
         width: 100%;
     }
-    .tabs {
-       height: 40%;
-    }
 }
-/* Landscape phone to portrait tablet */
-@media (max-width: 780px) {
-    .tabs {
-        height: 50%;
-     }
-}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    .tabs {
-        height: 80%;
-     }
      .tabby-content{
         top: 60px;
      }

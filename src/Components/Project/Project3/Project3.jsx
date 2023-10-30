@@ -23,7 +23,7 @@ export default function Project3() {
         </div>
       </section>
       {/* body */}
-      <div className="container py-4">
+      <div className="container my-4">
         <div className="row">
           <div className="col-lg-8 d-flex align-items-center justify-content-center">
             <img src={img1} className='imgs-project3' alt="project img" />
