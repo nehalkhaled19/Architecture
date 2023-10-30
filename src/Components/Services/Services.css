@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Services */
 .unique h2 {
     font-size: 24px;
@@ -17,7 +24,8 @@
     width: 700px;
     height: 375px;
     position: relative;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
 }
 
 .video i {
@@ -32,7 +40,8 @@
 }
 
 #videoImg {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
 }
 

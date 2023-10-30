@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .About-Project .form-control:focus {
     border-color: #d8b478;
-    box-shadow: 0 0 0 0.25rem #eccc94bf;
+    -webkit-box-shadow: 0 0 0 0.25rem #eccc94bf;
+            box-shadow: 0 0 0 0.25rem #eccc94bf;
 }
 .btn-send{
     color: white ;
@@ -9,7 +17,8 @@
 .btn-send:hover{
     color: #d8b478;
     background-color: transparent;
-    box-shadow: 0 0 0 0.25rem #edd5abcb;
+    -webkit-box-shadow: 0 0 0 0.25rem #edd5abcb;
+            box-shadow: 0 0 0 0.25rem #edd5abcb;
 }
 .btn:disabled{
     background-color: #e3be7d !important;

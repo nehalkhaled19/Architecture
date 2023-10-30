@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* home */
 .home-bg {
     /* transform: scale(2, 1); */
@@ -34,6 +41,8 @@
     width: 55px;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -171,7 +180,9 @@
     }
 
     .home-bg {
-        transform: scale(1.5, 1);
+        -webkit-transform: scale(1.5, 1);
+            -ms-transform: scale(1.5, 1);
+                transform: scale(1.5, 1);
         width: 100%;
         height: 100vh;
     }
@@ -183,7 +194,9 @@
         padding: 0px 10px !important;
     }
     .home-bg {
-        transform: scale(2, 1);
+        -webkit-transform: scale(2, 1);
+            -ms-transform: scale(2, 1);
+                transform: scale(2, 1);
         height: 950px;
         background-position: center center;
     }
@@ -226,7 +239,9 @@
         padding: 0px 15px !important;
     }
     .home-bg {
-        transform: scale(3, 1);
+        -webkit-transform: scale(3, 1);
+            -ms-transform: scale(3, 1);
+                transform: scale(3, 1);
         height: 800px;
     }
 
@@ -267,14 +282,18 @@
         padding: 0px 10px !important;
     }
     .home-main {
-        transform: scale(0.9,0.9);
+        -webkit-transform: scale(0.9,0.9);
+            -ms-transform: scale(0.9,0.9);
+                transform: scale(0.9,0.9);
     }
     nav .nav-brand img {
         width: 100%;
     }
 
     .home-bg {
-        transform: scale(4, 1);
+        -webkit-transform: scale(4, 1);
+            -ms-transform: scale(4, 1);
+                transform: scale(4, 1);
     }
 
     .home-main h1 {

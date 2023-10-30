@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* project-navbar */
 .project-navbar .to-home,
 .project-name {
@@ -7,6 +14,8 @@
 
 .project-navbar .to-home {
     color: #a49d9d;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
 }
 
