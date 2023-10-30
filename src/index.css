@@ -7,7 +7,9 @@ body {
 :root {
     --dark-color: #262626;
 }
-
+.page-header{
+    height: 50%;
+}
 /* loading */
 .loading {
     display: flex;
@@ -152,9 +154,17 @@ nav {
 .progress-bar {
     transition: all 1s;
 }
-
+@media (max-width:980px) {
+    .page-header{
+        margin-top: 20px;
+        height: 30% !important;
+    }
+}
 @media (max-width:480px) {
     .navbar-brand{
         width: 60%;
     }
+    /* .page-header{
+        height: 40% !important;
+    } */
 }

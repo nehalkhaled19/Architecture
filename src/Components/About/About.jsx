@@ -28,9 +28,9 @@ export default function About() {
     <Nav></Nav>
     <div className='about'>
       {/* title */}
-      <div className=' h-50'>
+      <div className='page-header'>
         <div className="conatiner py-5 about-title">
-          <div className='about-text-color h-100 d-flex  flex-column justify-content-center text-center' >
+          <div className='about-text-color h-100 d-flex pt-5 flex-column justify-content-center text-center' >
             <h1 className='main-font-weight'>Get to know us</h1>
             <p>Meet our team of expert</p>
           </div>

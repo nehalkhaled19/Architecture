@@ -3,7 +3,6 @@
     /* transform: scale(2, 1); */
     height: 800px;
     background-position: center center;
-
 }
 
 .carousel-width {
@@ -185,11 +184,13 @@
     }
     .home-bg {
         transform: scale(2, 1);
-        height: 700px;
+        height: 950px;
         background-position: center center;
-
     }
-
+    /* .home-main {
+        transform: scale(1,);
+        /* height: 800px; */
+    
     .imgs-width {
         width: 100%;
     }
@@ -219,26 +220,19 @@
 
 }
 
-/* i- */
-@media (max-height: 995px) {
-    nav .container {
-        padding: 0px 10px !important;
-    }
-    .home-bg {
-        transform: scale(2, 1);
-        height: 900px;
-        background-position: center center;
-
-    }
-}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     nav .container {
         padding: 0px 15px !important;
     }
+    .home-bg {
+        transform: scale(3, 1);
+        height: 800px;
+    }
 
     .home-main {
-        transform: scale(0.7,0.7);
+        /* transform: scale(0.7,0.7); */
+        height: 800px;
     }
 
     .map {
@@ -281,7 +275,6 @@
 
     .home-bg {
         transform: scale(4, 1);
-        /* height: 100%; */
     }
 
     .home-main h1 {

@@ -9,7 +9,7 @@ export default function Project4() {
   return (
     <div>
          {/* title */}
-         <section className=' h-50'>
+         <section className='page-header'>
         <div className="conatiner py-5 about-title">
           <div className='about-text-color h-100 d-flex flex-column justify-content-center text-center' >
             <h1 className='main-font-weight my-3'>Concrete House on Lake</h1>
