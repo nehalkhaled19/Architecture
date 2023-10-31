@@ -168,3 +168,13 @@ nav {
         height: 50% !important;
     } 
 }
+/* Landscape phones and down */
+@media (max-height: 480px) {
+    .work-img {
+        height: 50%;
+        object-fit: cover;
+    }
+    .page-header{
+        height: 70% !important;
+    } 
+}

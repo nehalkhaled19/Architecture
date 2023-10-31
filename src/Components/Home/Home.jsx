@@ -12,6 +12,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Link } from 'react-router-dom';
 import NavHome from '../NavHome/NavHome';
 import $ from 'jquery'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 
 export default function Home() {
@@ -43,8 +45,12 @@ export default function Home() {
     }
     // section1
     imgs(Section1, '.return-right', 'right')
-    // section2
+    // // section2
     imgs(Section2, '.return-left', 'left')
+    
+      // if (scrollingTop >= Section1) {
+      //     $('#nono').attr('data-aos','')
+      //   }
   })
 
   // img
@@ -135,7 +141,7 @@ export default function Home() {
         <div className="row ">
           <div className="col-md-6 text-center d-flex align-items-center  ">
             <div className='over-flow'>
-              <img src={arhi1} className='imgs-width return-right' alt="arhi1" />
+              <img data-aos="fade-right" src={arhi1} className='imgs-width return-right' id='nono' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
