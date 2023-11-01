@@ -28,7 +28,7 @@ export default function Home() {
     if ($(document).width() > 480) {
       AOS.init();
     }
-    if ($(document).width() < 480) {
+    if ($(document).width() < 767) {
       $('.aos').attr('data-aos', '')
     }
     setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
