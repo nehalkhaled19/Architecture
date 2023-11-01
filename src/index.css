@@ -24,17 +24,7 @@ body {
 
 }
 
-.return-right {
-    position: relative;
-    right: 500px;
-    transition: right 1.7s;
-}
 
-.return-left {
-    position: relative;
-    left: 500px;
-    transition: left 1.7s;
-}
 
 /*  Navbar */
 nav {
@@ -171,10 +161,12 @@ nav {
 /* Landscape phones and down */
 @media (max-height: 480px) {
     .work-img {
-        height: 50%;
+        width: 50%;
+        height: 200px;
+
         object-fit: cover;
     }
     .page-header{
-        height: 70% !important;
+        height: 75% !important;
     } 
 }

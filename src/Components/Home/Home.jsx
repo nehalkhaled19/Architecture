@@ -13,13 +13,10 @@ import { Link } from 'react-router-dom';
 import NavHome from '../NavHome/NavHome';
 import $ from 'jquery'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import 'aos/dist/aos.css';
 
 export default function Home() {
 
-  let [Section1, setSection1] = useState(0)
-  let [Section2, setSection2] = useState(0)
   let [counterSection, setCounterSection] = useState(0)
   let scrollingTop;
   let starting = false;
@@ -28,9 +25,8 @@ export default function Home() {
     $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     // loading
     $('.loading').fadeOut(3000)
-    setCounterSection( $('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
-    setSection1($('#sec1').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
-    setSection2($('#sec2').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
+    AOS.init();
+    setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
   }, [])
 
   // --------------------------------scrolling
@@ -43,22 +39,11 @@ export default function Home() {
       }
       starting = true;
     }
-    // section1
-    imgs(Section1, '.return-right', 'right')
-    // // section2
-    imgs(Section2, '.return-left', 'left')
-    
-      // if (scrollingTop >= Section1) {
-      //     $('#nono').attr('data-aos','')
-      //   }
+
   })
 
-  // img
-  function imgs(scrolling, imgclass, place) {
-    if (scrollingTop >= scrolling) {
-      $(imgclass).css(place, '0px')
-    }
-  }
+
+
   //counter function
   function handleCounter() {
     const counters = document.querySelectorAll('.counter-num');
@@ -141,11 +126,15 @@ export default function Home() {
         <div className="row ">
           <div className="col-md-6 text-center d-flex align-items-center  ">
             <div className='over-flow'>
-              <img data-aos="fade-right" src={arhi1} className='imgs-width return-right' id='nono' alt="arhi1" />
+              <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                src={arhi1} className='imgs-width ' id='nono' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
-            <div>
+            <div data-aos="fade-left"
+             data-aos-duration="500" >
               <h2 className='home-title main-h2 pb-3'>Less is more.
               </h2>
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
@@ -177,7 +166,7 @@ export default function Home() {
       <div className="container ">
         <div className="row">
           <div className="col-md-6 pb-4 d-flex flex-column justify-content-center">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="500">
               <h2 className='home-title main-h2 pb-3'>Architecture is a visual art.
               </h2>
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
@@ -201,7 +190,9 @@ export default function Home() {
           </div>
           <div id='sec2' className="col-md-6 text-center d-flex  align-items-center ">
             <div className='over-flow'>
-              <img src={arhi2} className='imgs-width return-left' alt="arhi2" />
+              <img data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" src={arhi2} className='imgs-width ' alt="arhi2" />
             </div>
           </div>
 
@@ -256,7 +247,8 @@ export default function Home() {
           </div>
           <div className="col-md-6 my-4 d-flex align-items-center ">
             <div className='over-flow'>
-              <img src={arhi3} className='w-100' alt="arhi2" />
+              <img data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" src={arhi3} className='w-100' alt="arhi2" />
             </div>
           </div>
 

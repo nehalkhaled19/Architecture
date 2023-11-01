@@ -7,6 +7,8 @@ import person2 from '../../images/person2-600x600.jpg'
 import person3 from '../../images/person3-600x600.jpg'
 import Nav from '../Nav/Nav'
 import $ from 'jquery'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -15,11 +17,10 @@ export default function About() {
   useEffect(() => {
     $(".methood-h3").on('click', (e) => {
       let x = $(e).parent().find(".details")
-      // let x = $(this).parent().find("div")
-
+    
       $(x).slideToggle(500)
       $(".details").not(x).slideUp(500)
-      console.log(x);
+ 
     })
   }, [])
 
