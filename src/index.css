@@ -140,6 +140,11 @@ nav {
 .object {
     object-fit: cover;
 }
+.btn-light:hover {
+background-color: transparent !important;
+color: white !important;
+border-color: white !important;
+}
 
 .progress-bar {
     transition: all 1s;
