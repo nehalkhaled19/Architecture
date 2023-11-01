@@ -178,7 +178,7 @@
 @media (max-height: 400px){
     .work-img {
         width: 70%;
-        height: 60%;
+        height: 80%;
         object-fit: cover;
     }
     .model-container {
