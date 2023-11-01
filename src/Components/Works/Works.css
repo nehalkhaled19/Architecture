@@ -175,20 +175,3 @@
         font-size: 18px;
     }
 }
-/* Landscape phones and down */
-@media (max-height: 480px) {
-    .work-img {
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-    }
-    .model-container {
-        width: 10%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-   
-}
