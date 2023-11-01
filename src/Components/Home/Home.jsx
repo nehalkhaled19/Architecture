@@ -25,7 +25,15 @@ export default function Home() {
     $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     // loading
     $('.loading').fadeOut(3000)
-    AOS.init();
+
+    var widerScreenWidth = window.matchMedia("(min-width: 501px)");
+
+if (widerScreenWidth.matches ) {
+
+  AOS.init();
+
+}
+
     setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
   }, [])
 
