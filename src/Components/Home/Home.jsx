@@ -27,12 +27,14 @@ export default function Home() {
     $('.loading').fadeOut(3000)
 
     var widerScreenWidth = window.matchMedia("(min-width: 501px)");
+    if (widerScreenWidth.matches) {
+      AOS.init();
 
-if (widerScreenWidth.matches ) {
-
-  AOS.init();
-
-}
+    }
+    var widerScreenWidth = window.matchMedia("(max-width: 501px)");
+    if (widerScreenWidth.matches) {
+      $('.aos').attr('data-aos','')
+    }
 
     setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
   }, [])
@@ -137,12 +139,12 @@ if (widerScreenWidth.matches ) {
               <img data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
-                src={arhi1} className='imgs-width ' id='nono' alt="arhi1" />
+                src={arhi1} className='aos imgs-width ' id='nono' alt="arhi1" />
             </div>
           </div>
           <div className="col-md-6 pt-4 d-flex flex-column justify-content-center">
             <div data-aos="fade-left"
-             data-aos-duration="500" >
+              data-aos-duration="1000" className='aos' >
               <h2 className='home-title main-h2 pb-3'>Less is more.
               </h2>
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
@@ -174,7 +176,7 @@ if (widerScreenWidth.matches ) {
       <div className="container ">
         <div className="row">
           <div className="col-md-6 pb-4 d-flex flex-column justify-content-center">
-            <div data-aos="fade-right" data-aos-duration="500">
+            <div className='aos' data-aos="fade-right" data-aos-duration="500">
               <h2 className='home-title main-h2 pb-3'>Architecture is a visual art.
               </h2>
               <p className='main-p'>We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
@@ -198,9 +200,9 @@ if (widerScreenWidth.matches ) {
           </div>
           <div id='sec2' className="col-md-6 text-center d-flex  align-items-center ">
             <div className='over-flow'>
-              <img data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" src={arhi2} className='imgs-width ' alt="arhi2" />
+              <img  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" src={arhi2} className='imgs-width aos ' alt="arhi2" />
             </div>
           </div>
 
@@ -256,7 +258,7 @@ if (widerScreenWidth.matches ) {
           <div className="col-md-6 my-4 d-flex align-items-center ">
             <div className='over-flow'>
               <img data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" src={arhi3} className='w-100' alt="arhi2" />
+                data-aos-anchor-placement="center-bottom" src={arhi3} className='w-100 aos' alt="arhi2" />
             </div>
           </div>
 
