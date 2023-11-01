@@ -25,14 +25,11 @@ export default function Home() {
     $("html,body").animate({ scrollTop: 0 }, { duration: 0, queue: false })
     // loading
     $('.loading').fadeOut(3000)
-
-    var widerScreenWidth = window.matchMedia("(min-width: 501px)");
-    if (widerScreenWidth.matches) {
+    if ($(document).width() > 480) {
       AOS.init();
-
     }
-    if ($(document).width() > 480){
-      $('.aos').attr('data-aos','')
+    if ($(document).width() < 480) {
+      $('.aos').attr('data-aos', '')
     }
     setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
   }, [])
@@ -198,7 +195,7 @@ export default function Home() {
           </div>
           <div id='sec2' className="col-md-6 text-center d-flex  align-items-center ">
             <div className='over-flow'>
-              <img  data-aos="flip-left"
+              <img data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000" src={arhi2} className='imgs-width aos ' alt="arhi2" />
             </div>
