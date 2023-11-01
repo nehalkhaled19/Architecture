@@ -31,11 +31,9 @@ export default function Home() {
       AOS.init();
 
     }
-    var widerScreenWidth = window.matchMedia("(max-width: 501px)");
-    if (widerScreenWidth.matches) {
+    if ($(document).width() > 480){
       $('.aos').attr('data-aos','')
     }
-
     setCounterSection($('#counterSection').offset().top - $('#carouselExampleSlidesOnly').outerHeight(true))
   }, [])
 
